@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iV6Kmy9REU652Qb1mfe0Dw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="11dfd268-7a42-4353-8dc9-e699a8a416bd" DesignTimeRectangle="950, 684, 86, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Cancel' tag='BUTTON' /&gt;" Guid="21e91993-1b11-446e-86ec-bbfb2c005a42" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Dr. Testy McTester - Staff - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2a9a4f68bc19e11d3eabee5a82972235.png" xmlns="">0ocOVVyZu30WUbrxsgUoKQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

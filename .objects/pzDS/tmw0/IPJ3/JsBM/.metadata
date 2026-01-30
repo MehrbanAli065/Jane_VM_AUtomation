@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT password",
+  "Type": "Element",
+  "TaxonomyType": "Password",
+  "Id": "JsBMy7tzm0yQNyk0tWOdCg",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/JsBMy7tzm0yQNyk0tWOdCg",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/IPJ3-ke5_E-gceqP5m_1Rw",
+  "Created": "2026-01-30T10:02:47.0855183Z",
+  "Updated": "2026-01-30T10:02:47.0855183Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

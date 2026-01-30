@@ -1,0 +1,13 @@
+﻿{
+  "Name": "LogIN_Via_Last_Pass",
+  "Type": "Screen",
+  "Id": "WIS6xAIm5kGxnLjldtnH9Q",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/WIS6xAIm5kGxnLjldtnH9Q",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/pDKRQHXkOUCZSQtz21zHaA",
+  "Created": "2026-01-30T12:06:20.3051311Z",
+  "Updated": "2026-01-30T12:06:20.3051311Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

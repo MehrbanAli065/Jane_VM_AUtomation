@@ -1,0 +1,6 @@
+{
+  "Name": "Jane_Booking_Client_Sessions",
+  "ProjectType": "Process",
+  "Description": "Booking Client Session\r\nCancelling Client Session\r\nRescheduling  Client Session\r\nRecurring  Client Session",
+  "MainFile": "1_Main.xaml"
+}

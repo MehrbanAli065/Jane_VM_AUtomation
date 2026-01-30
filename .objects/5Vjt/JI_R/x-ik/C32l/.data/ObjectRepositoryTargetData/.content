@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5ys2spc6G0-8BHgxwiYVcA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.thalamusgme.com/applicant/calendar" DesignTimeRectangle="619, 751, 251, 429" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*0  1st Interview*' tag='BUTTON' /&gt;" Guid="0b69fc42-9a1c-41d3-a836-6ceb250eb8e7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Applicant Dashboard - Thalamus' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="44a820a50bd33700dc444d4c341218d1.png" xmlns="">0_Xg8clo4okqOlx4Ms8xKNA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Highlight</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PAf4Z3eFzU6Pc_yjZtxvUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.thalamusgme.com/applicant/calendar" DesignTimeRectangle="964, 863, 299, 108" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='pl-sm-2 col-sm-6 ng-star-inserted' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Cancel WaitlistSign up for Interview' /&gt;" Guid="37fa8469-bcdd-4c1f-9a6e-77c332bd2c6c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Applicant Dashboard - Thalamus' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ad075e15f55f4fe69972351fe8167ed0.png" xmlns="">0ooqBq1jO4kS-gx58sdGkZw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

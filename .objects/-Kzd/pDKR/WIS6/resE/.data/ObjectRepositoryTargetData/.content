@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KBg-XMYqXUSGkPG52Q78lg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="d0a5eb23-8014-4301-86a7-e40d31ffe2cc" DesignTimeRectangle="519, 709, 881, 57" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='log_in' tag='BUTTON' aaname=' Sign In ' /&gt;" Guid="4d9d32d0-e180-48f9-8199-e0cde69deb66" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShiftGrit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="02a01c636aba7a86e9eddc1de4da60e1.png" xmlns="">0F2SSmkF8KEWz7q1f-H5guQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Applicant Dashboard - Thalamus(1)(1)",
+  "Type": "Screen",
+  "Id": "x-ikhS2xwU24oGZ51rhkDQ",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/x-ikhS2xwU24oGZ51rhkDQ",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/JI_RpmdvHEWKrbKZnv5sLg",
+  "Created": "2025-12-23T06:50:15.2702183Z",
+  "Updated": "2025-12-23T06:50:15.2702183Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

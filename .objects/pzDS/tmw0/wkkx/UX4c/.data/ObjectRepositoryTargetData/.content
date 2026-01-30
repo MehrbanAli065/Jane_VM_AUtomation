@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vP9BMQnhAku9gF4d7OUyoA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="539, 294, 333, 343" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='react-datepicker__month-container' parentid='portal-root' tag='DIV' /&gt;" Guid="8474aac7-c5e6-40e1-a62c-e355dace6efa" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f4e8e5f330f4a660e9eb8a125fb6d1a8.png" xmlns="">0GVGEPRvKXk28NLYM-floUg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT auth_key",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "Zev2Q24mgUat_QenzUepDA",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/Zev2Q24mgUat_QenzUepDA",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/H9nMxD6hWU-EF8HCb9xrNg",
+  "Created": "2026-01-30T07:46:54.1156134Z",
+  "Updated": "2026-01-30T07:46:54.1156134Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

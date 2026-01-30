@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Gf5mqPosvUOw4vUGwAhxVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="c4a6a152-4d1a-438a-b173-8189da813cf2" DesignTimeRectangle="625, 689, 25, 25" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='Checkbox__1aiogr22_v1_30_0' tag='svg' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f977ce22-c020-4889-a1ff-7918e4851f20" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Client #16693 - ShiftGrit - Jane' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c4a6a152-4d1a-438a-b173-8189da813cf2" DesignTimeRectangle="665, 691, 216, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Intern Therapist Declaration' tag='LABEL' type='' class='sc-chKlql KXYaA' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Intern Therapist Declaration' /&gt;" Guid="0abe2c27-56b1-4c15-8d67-2a699df6de27" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8c7194ba6f29e24bc3bd75b1927bfbd5.png" xmlns="">0XDihQQkbwUGV9MBV9TvVgg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

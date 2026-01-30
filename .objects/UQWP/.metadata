@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome-Reschedule Appointment(1)",
+  "Type": "App",
+  "Id": "UQWPzw4VD0qidXRGuaedhw",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/UQWPzw4VD0qidXRGuaedhw",
+  "Created": "2025-12-31T09:19:38.7594485Z",
+  "Updated": "2025-12-31T09:19:38.7594485Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

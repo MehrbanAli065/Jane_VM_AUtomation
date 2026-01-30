@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NZWrYGm2qUuVSGHFhhZqiQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="6b9a9194-2a6d-4e56-838e-8b7427845b99" DesignTimeRectangle="1197, 523, 113, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='pane-right-extended' tag='LABEL' data-e2e-id='e2e_checkbox' visibleinnertext='{0}' /&gt;&quot;, dayName)]" Guid="bced9ee0-5705-412b-acd9-174ab1af4fa5" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Dr. Testy McTester - Staff - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bac36095f183bca8028749fc49ac24d9.png" xmlns="">0ap6kjf3g-EWTT7aXw8NHFA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="dayName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

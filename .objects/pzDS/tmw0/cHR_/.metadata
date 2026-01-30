@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome-Reschedule Appointment",
+  "Type": "Screen",
+  "Id": "cHR_NJGXQEu8iIn69R-1pQ",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/cHR_NJGXQEu8iIn69R-1pQ",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/tmw0MYLLQkK4SeP3mopIGA",
+  "Created": "2025-12-22T06:55:41.1744646Z",
+  "Updated": "2025-12-22T06:55:41.1744646Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

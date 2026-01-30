@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Cancel Waitlist Sign up…",
+  "Type": "Element",
+  "Id": "mgfO3U6D_EWkug2DaZ98bQ",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/mgfO3U6D_EWkug2DaZ98bQ",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/Qa066soUW0ChR6wdG3s4bA",
+  "Created": "2026-01-05T13:06:48.3545983Z",
+  "Updated": "2026-01-05T13:06:48.3545983Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

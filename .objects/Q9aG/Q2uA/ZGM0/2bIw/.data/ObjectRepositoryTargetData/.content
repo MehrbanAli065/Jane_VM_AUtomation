@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DNDMZ2lurk6pHI27u-AUEw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="bdb2f05f-8843-4065-8e38-0c07a9fd3635" DesignTimeRectangle="470, 529, 646, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Text Message (SMS) 2 days before appointment' parentid='user_profile_content' tag='LABEL' /&gt;" Guid="55fc1443-5db0-4c9b-bf5f-1f2d5fe9c6e5" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d67c9f775290017fdb0feaff94bd036a.png" xmlns="">0a-dWVKHkfEmbauhYvlpH1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

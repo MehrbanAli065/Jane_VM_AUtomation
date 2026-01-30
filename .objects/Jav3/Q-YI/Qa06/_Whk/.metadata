@@ -1,0 +1,13 @@
+﻿{
+  "Name": "View Program Cancel Wai…",
+  "Type": "Element",
+  "Id": "_Whk28BtFkW_lwCMuuBdfQ",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/_Whk28BtFkW_lwCMuuBdfQ",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/Qa066soUW0ChR6wdG3s4bA",
+  "Created": "2026-01-05T13:18:27.8278584Z",
+  "Updated": "2026-01-05T13:18:27.8278584Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

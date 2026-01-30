@@ -1,0 +1,13 @@
+﻿{
+  "Name": "DIV pane-right",
+  "Type": "Element",
+  "Id": "veQOs3HncECqT3JrnAl8gw",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/veQOs3HncECqT3JrnAl8gw",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/ANlnrHVF0kCTokLclqauSQ",
+  "Created": "2025-12-30T10:09:48.0114179Z",
+  "Updated": "2025-12-30T10:09:48.0114179Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

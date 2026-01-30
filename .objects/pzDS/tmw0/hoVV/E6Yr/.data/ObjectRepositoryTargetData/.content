@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kYHjiZOv9UCpJhwrFfw2PQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="72857710-ef82-41c3-8c76-33c0b8b9d398" DesignTimeRectangle="435, 557, 681, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='phone-number-label-mobile_phone' tag='LABEL' /&gt;" Guid="20d6668d-1f8b-4baf-b4fd-31d22a580fd5" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bb2c899d51457bd3586ff3c5e3849fb6.png" xmlns="">0crh_prGVpEmmBL_cLf7h_Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

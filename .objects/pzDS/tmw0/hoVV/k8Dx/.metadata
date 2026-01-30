@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Shift Couples Counselli…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "k8DxVafPO0KlWAKdsmAjGw",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/k8DxVafPO0KlWAKdsmAjGw",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/hoVVdT6Lpk2FpPLv0wUTYw",
+  "Created": "2025-12-29T09:57:34.0697878Z",
+  "Updated": "2025-12-29T09:57:34.0697878Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

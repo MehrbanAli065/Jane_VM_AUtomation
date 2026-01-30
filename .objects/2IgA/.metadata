@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Home  Substack",
+  "Type": "App",
+  "Id": "2IgAnMia7kGptg9WJTMTYg",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/2IgAnMia7kGptg9WJTMTYg",
+  "Created": "2026-01-13T11:55:40.5048813Z",
+  "Updated": "2026-01-13T11:55:40.5048813Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

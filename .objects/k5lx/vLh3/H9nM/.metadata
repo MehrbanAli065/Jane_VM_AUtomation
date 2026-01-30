@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome ShiftGrit",
+  "Type": "Screen",
+  "Id": "H9nMxD6hWU-EF8HCb9xrNg",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/H9nMxD6hWU-EF8HCb9xrNg",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/vLh3XHio_UGinAwkRSh_Og",
+  "Created": "2026-01-30T07:38:39.0942217Z",
+  "Updated": "2026-01-30T07:38:39.0942217Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lhgMlyDoGE20qK8DLIW8Ag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app.thalamusgme.com/applicant/calendar" CVScreenId="e89643eb-7fca-4fe9-b147-549f2c860a48" DesignTimeRectangle="484, 477, 45, 45" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;thal-root&amp;gt;div&amp;gt;div&amp;gt;thal-applicant-calendar&amp;gt;div&amp;gt;div&amp;gt;thal-calendar&amp;gt;thal-calendar-header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' idx='2' /&gt;" Guid="086971c5-3cea-4e4c-a5cc-ff7599c6bbc4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Applicant Dashboard - Thalamus' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fb677e7d307f79b21fe853aeb86aa18b.png" xmlns="">0hQKGQODwGUGB6Qe0zxq-ag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

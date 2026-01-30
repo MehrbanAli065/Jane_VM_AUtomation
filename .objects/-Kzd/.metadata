@@ -1,0 +1,12 @@
+﻿{
+  "Name": "LogIN_Via_Last_Pass",
+  "Type": "App",
+  "Id": "-Kzd-1g4lUq-shfjUKj71A",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/-Kzd-1g4lUq-shfjUKj71A",
+  "Created": "2026-01-30T12:06:19.7278479Z",
+  "Updated": "2026-01-30T12:06:19.7278479Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

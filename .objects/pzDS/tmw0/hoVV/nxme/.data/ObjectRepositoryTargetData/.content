@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tty_qVQRAkSnf54fMx33fQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="d79d0bcc-9974-4057-b52c-a60a13fa467b" DesignTimeRectangle="625, 592, 25, 25" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='Checkbox__1aiogr22_v1_30_0' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="1629ba5c-2d6a-4336-9f70-642815010c45" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Client #16693 - ShiftGrit - Jane' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d79d0bcc-9974-4057-b52c-a60a13fa467b" DesignTimeRectangle="665, 594, 386, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Shift Couples Counselling Intake &amp;amp; Consent Form' tag='LABEL' type='' class='sc-chKlql KXYaA' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Shift Couples Counselling Intake &amp;amp; Consent Form' /&gt;" Guid="e0582876-8e39-4ce0-9baa-d3e76fda9ade" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fb313015da968144c93030f57d50df28.png" xmlns="">0Q4hWChdwwkK3rnIeZLiT8A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

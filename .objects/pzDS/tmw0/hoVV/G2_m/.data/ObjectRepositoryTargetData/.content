@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="E95uP7PTfEqGEbweDBOe1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="595, 377, 748, 515" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='DIV' visibleinnertext='Add message&amp;#xA;Select forms&amp;#xA;Shift Couples Counselling Intake &amp;amp; Consent Form&amp;#xA;ShiftGrit Minor Assessment Intake &amp;amp; Consent&amp;#xA;ShiftGrit Adult Assessment Intake &amp;amp; Consent&amp;#xA;Shift Group Therapy Intake &amp;amp; Consent Form&amp;#xA;Shift Intake &amp;amp; Consent Form&amp;#xA;ETA&amp;#xA;Registered Social Worker Declaration&amp;#xA;Provisional Psychologist Declaration&amp;#xA;Certified Canadian Counsellor Declaration&amp;#xA;Mental Health Therapist Declaration&amp;#xA;Intern Therapist Declaration&amp;#xA;Individual Therapy Membership (6-month)&amp;#xA;Individual Therapy Membership (Annual)&amp;#xA;Sun Life - Consen*' /&gt;" Guid="a327f916-a29a-4b25-9adf-48e1da038ef3" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Client #* - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fe4e434df631b2116c226cdf8d0804ff.png" xmlns="">0EXZfVi2AvUuZCDLNph3p9w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

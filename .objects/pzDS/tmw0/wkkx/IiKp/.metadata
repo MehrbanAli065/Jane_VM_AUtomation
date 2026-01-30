@@ -1,0 +1,14 @@
+﻿{
+  "Name": "May",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "IiKpwspFDkCU20t7YF7HJg",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/IiKpwspFDkCU20t7YF7HJg",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/wkkxvTQDJUuRPjMtIxFP5A",
+  "Created": "2025-12-23T05:56:32.681167Z",
+  "Updated": "2025-12-23T05:56:32.681167Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

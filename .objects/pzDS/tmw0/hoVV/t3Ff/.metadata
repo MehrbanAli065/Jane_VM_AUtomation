@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Shift Group Therapy Int…",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "t3FftGMJE0-0kEhVBLb05w",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/t3FftGMJE0-0kEhVBLb05w",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/hoVVdT6Lpk2FpPLv0wUTYw",
+  "Created": "2025-12-29T10:14:41.7568714Z",
+  "Updated": "2025-12-29T10:14:41.7568714Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

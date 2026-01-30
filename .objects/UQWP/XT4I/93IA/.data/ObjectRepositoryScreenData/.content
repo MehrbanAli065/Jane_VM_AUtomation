@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="H0eLFqv_ckG3Fpx8-a3new" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOKSURBVFhHxVddSJNRGP6iuqibrJsugpCoSOii6EICiYpAuii6iH7oB6XbIKgr8aKErrrRKC+6SSOKIMK6MAoKcaK2Leecuk3dn7q52TY/3a9zm2/ve/Z9053vlLix+cAztuf8vO97znnfsyPl0TNYLemMrVKvwY2EMtEt6QwdUs9wtWJVQY/hBDbKXOdy0s1s5oxj5OWN+l+UcytBSyLuUAm2SfixFdGrdJMDoobKUShugvsHh6FaPwKnh61wx+6EexMuaJn2wWt/EN4GQmCMxGAykYSukMz6aebQCAqr+k1QY7TADZsD6nDyfQMm6MBJ38+HYDyWAHdyGZbSGdgM+peiWlsaAfnE44N4NssGRTMZ5vnuvt+QXl1lWrEgpzX2eKHB7lK65/BnJQ3blDYPTlAKdIuRAluMvPBDXlK6r+HciI21OZJJRSkOtIW8PY0Do/GE0n0Nr+bmWZsxEleU4vDIOV1gi5EXbHFtlB+DYdbWh0tYCi6NTRbYYuQFB6YMj6FonLUZMKVKwXHjaIEtRl6gk8qDlp7aVOcoG5aVLPkfUtlV8KdW2PcMjtnVZyywxcgLIgd+yrnTG81k4bk3AGfxUDa5Z0FNShOu0LfwovIrB0rfCyN2OGKwQAzH2ROCFCTygsiBd1h8juHyvQkE4bHHyzSqFV1BGfunWJ3oDsvwYT4MndiH0OzysvN00TLBfn9HB3lbjLzQ5vVD90JhNM1uL1zBA1SLFZGiJuNV/UMQwhpxxmyDvVg1W9Axqp4PnTNsTB3qd7GmuJSAmlyzBXbyFIkPpjxskIp6XMqn03OwB41STaBiVYMrchmdavflUpRW5tmMH+ox4ga8D8jBT8EFtjXXrA44JLoHiCLx6viUYprKZwoO6y3gW15hS04ZsR7mWBxa8Vyo+Ix95HQavuDl0zjhxLsjDIt4Z1AQIlsaByjCU6ZxOI8DGjGSWpMVvnIHrBgcxcPI22LkhYN6M4uavKYDmS3xAiIkMGW36wQpSBSJB36ZsWzO4PUZgQimU6mw4DaJ7DAKxXUkz08OjcFNmxNe+AIwgHc61YPNgM6DaG5GobgBdyhO3UKnXmIWDG7g1HXrlHAeRqFYBHcqTt3Gv2XteHvS9vXi5XUfU1rUP0+hWEnix5b/LW/jxMqRHkXK06yS70KV+D5UH6m5x2kltwLfherjVAVbCX0nNpb3eU5bno9ckv4CYobWxx+1Xo8AAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' htmlwindowname='jane' title='*' /&gt;" Url="https://shiftgritab.janeapp.com/admin#today" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="07acaaeb2a4fcb48188befb74227b430.jpg" xmlns="">0XM2elNYMWkSZf1qNsqvnAQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

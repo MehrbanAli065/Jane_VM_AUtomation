@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Applicant Dashboard - Thalamus(1)(1)",
+  "Type": "App",
+  "Id": "Jav3CjO3gEOOnJFk7pLRDQ",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/Jav3CjO3gEOOnJFk7pLRDQ",
+  "Created": "2026-01-05T13:06:47.262107Z",
+  "Updated": "2026-01-05T13:06:47.262107Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

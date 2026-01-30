@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Select the treatment ty…",
+  "Type": "Element",
+  "Id": "3_8pt7yZjEWtpqkIHsLYUQ",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/3_8pt7yZjEWtpqkIHsLYUQ",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/Dv6AaJ-yQEuJFvw0IheVwA",
+  "Created": "2025-12-22T11:11:13.9505089Z",
+  "Updated": "2025-12-22T11:11:13.9505089Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

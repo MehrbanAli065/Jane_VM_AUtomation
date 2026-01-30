@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TnjPym8i5kGyUx1w2pIpXw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/auth/failure" CVScreenId="81cb71ef-b01d-4736-b451-b4241550fdd2" DesignTimeRectangle="528, 505, 882, 58" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' placeholder='Password' type='password' /&gt;" Guid="cef7f27a-15f1-484e-8017-4201a108a4ce" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ShiftGrit' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9bc93c0fd548e9c448f11fcbecbf80b7.png" xmlns="">0_IFtznHrJk-VmE5qiFIBHA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

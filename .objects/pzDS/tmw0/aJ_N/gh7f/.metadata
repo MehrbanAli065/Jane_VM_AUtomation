@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Every Week",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "gh7fOtB8AkSZeOljGg9_yw",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/gh7fOtB8AkSZeOljGg9_yw",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/aJ_NGmBlHUSRZjevMpiQxA",
+  "Created": "2025-12-22T13:48:19.5544871Z",
+  "Updated": "2025-12-22T13:48:19.5544871Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

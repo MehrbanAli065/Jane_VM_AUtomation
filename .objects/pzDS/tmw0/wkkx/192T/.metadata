@@ -1,0 +1,14 @@
+﻿{
+  "Name": "2026-05-06(2)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "192Tygo-DU61XySBtk02Fw",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/192Tygo-DU61XySBtk02Fw",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/wkkxvTQDJUuRPjMtIxFP5A",
+  "Created": "2025-12-23T05:53:21.2794272Z",
+  "Updated": "2025-12-23T05:53:21.2794272Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

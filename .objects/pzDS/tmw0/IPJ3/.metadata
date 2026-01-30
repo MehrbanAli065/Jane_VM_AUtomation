@@ -1,0 +1,13 @@
+﻿{
+  "Name": "LogIn_Via_Jane_Credentials",
+  "Type": "Screen",
+  "Id": "IPJ3-ke5_E-gceqP5m_1Rw",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/IPJ3-ke5_E-gceqP5m_1Rw",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/tmw0MYLLQkK4SeP3mopIGA",
+  "Created": "2026-01-30T10:00:07.1777196Z",
+  "Updated": "2026-01-30T10:00:07.1777196Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

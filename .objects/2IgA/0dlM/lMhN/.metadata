@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Home  Substack",
+  "Type": "Screen",
+  "Id": "lMhNR33Ank6LlhSa5Femxw",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/lMhNR33Ank6LlhSa5Femxw",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/0dlMYVpu0UqpeA6AYFBqCA",
+  "Created": "2026-01-13T11:55:40.6831678Z",
+  "Updated": "2026-01-13T11:55:40.6831678Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

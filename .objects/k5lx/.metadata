@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome ShiftGrit",
+  "Type": "App",
+  "Id": "k5lxrtkSgkqWm6FlDzp-nA",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/k5lxrtkSgkqWm6FlDzp-nA",
+  "Created": "2026-01-30T07:38:38.9080606Z",
+  "Updated": "2026-01-30T07:38:38.9080606Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Book 9 appointments",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "VLZFezM5h0un8sCZwWZg5g",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/VLZFezM5h0un8sCZwWZg5g",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/MzC_qo4BLEKw2VUy6EbdqA",
+  "Created": "2026-01-01T08:37:09.9172328Z",
+  "Updated": "2026-01-01T08:37:09.9172328Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

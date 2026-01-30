@@ -1,0 +1,14 @@
+﻿{
+  "Name": "intake formsEmail an in…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Gj_7pcSpX0i_Co1YgOiiuA",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/Gj_7pcSpX0i_Co1YgOiiuA",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/hoVVdT6Lpk2FpPLv0wUTYw",
+  "Created": "2025-12-29T06:50:00.8681719Z",
+  "Updated": "2025-12-29T06:50:00.8681719Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

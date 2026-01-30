@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Calendar",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "qOP749N1ME2nN1PaCfkIzQ",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/qOP749N1ME2nN1PaCfkIzQ",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/Nr79MOEwPEyofXlp56gJPw",
+  "Created": "2025-12-23T06:30:45.2331895Z",
+  "Updated": "2025-12-23T06:30:45.2331895Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
