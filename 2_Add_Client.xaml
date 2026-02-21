@@ -133,31 +133,31 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_02_Add_Client_and_Book_Appointment" sap:VirtualizedContainerService.HintSize="899.6,5048.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_02_Add_Client_and_Book_Appointment" sap:VirtualizedContainerService.HintSize="1010,1432.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Add_Client" sap:VirtualizedContainerService.HintSize="592,5025.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Add_Client" sap:VirtualizedContainerService.HintSize="520,1409.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Search and Add Client if not exist" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558.4,4942.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Search and Add Client if not exist" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1326.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556.8,4748.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1132.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGoToUrl DisplayName="Go To URL - Client Tab" sap:VirtualizedContainerService.HintSize="523.2,60.8" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Url="https://shiftgritab.janeapp.com/admin#patients" Version="V5">
+              <uix:NGoToUrl DisplayName="Go To URL - Client Tab" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Url="https://shiftgritab.janeapp.com/admin#patients" Version="V5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -165,7 +165,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NGoToUrl>
-              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="523.2,60.8" sap2010:WorkflowViewState.IdRef="Delay_2">
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="Delay_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -173,7 +173,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Search Client Email" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="523.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[email]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Search Client Email" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[email]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="d4d464ec-6b15-4b5d-abf2-75f1968f7557" DesignTimeRectangle="22, 310, 300, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='user-list-search' tag='DIV' data-testid='form-group' /&gt;&lt;webctrl tag='INPUT' placeholder='Client Search...' type='search' /&gt;" Guid="e99ec522-aef6-4364-b622-18467dcca180" InformativeScreenshot="4fbc310bd27dbb383c8b28ac41e1c5c4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NTypeInto.Target>
@@ -184,7 +184,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="523.2,60.8" sap2010:WorkflowViewState.IdRef="Delay_1">
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="Delay_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -192,15 +192,16 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <uix:NCheckState sap2010:Annotation.AnnotationText="Check If client exists or not..&#xA;if not exist Then add the client else skip" DisplayName="Check App State 'No Results'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="523.2,4441.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+              <uix:NCheckState sap2010:Annotation.AnnotationText="Check If client exists or not..&#xA;if not exist Then add the client else skip" DisplayName="Check App State 'No Results'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,825.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="521.6,4052" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage sap2010:Annotation.AnnotationText="Bot is adding client now..." DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,92" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Bot is adding client now...&quot;]">
+                    <ui:LogMessage sap2010:Annotation.AnnotationText="Bot is adding client now..." DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452.8,92" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Bot is adding client now...&quot;]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -209,7 +210,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <uix:NGoToUrl DisplayName="Go To URL - janeapp.com" sap:VirtualizedContainerService.HintSize="488,126.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Url="https://shiftgritab.janeapp.com/admin#patients/new" Version="V5">
+                    <uix:NGoToUrl DisplayName="Go To URL - janeapp.com" sap:VirtualizedContainerService.HintSize="452.8,126.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Url="https://shiftgritab.janeapp.com/admin#patients/new" Version="V5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -217,18 +218,18 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGoToUrl>
-                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,3769.6" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="452.8,3025.6" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                       <TryCatch.Try>
-                        <uix:NCheckState sap2010:Annotation.AnnotationText="Client Profile Creation" DisplayName="Check App State:" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,2820.8" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                        <uix:NCheckState sap2010:Annotation.AnnotationText="Client Profile Creation" DisplayName="Check App State:" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,2076.8" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,2503.2" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,1759.2" sap2010:WorkflowViewState.IdRef="Sequence_55">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: First Name" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_27" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[first_name]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: First Name" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_27" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[first_name]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="80331e4a-56e5-4fde-ba4f-127b8627ba5f" DesignTimeRectangle="435, 426, 334, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='user_profile_content' tag='DIV' data-testid='form-group' idx='1' /&gt;&lt;webctrl tag='INPUT' type='text' placeholder='First Name' /&gt;" Guid="b0c68389-8953-4dee-b535-4e88a7e208b2" InformativeScreenshot="eb32aa50c7109265d8e24a6478103310.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -239,7 +240,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Last Name" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_28" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[last_name]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Last Name" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_28" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[last_name]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="80331e4a-56e5-4fde-ba4f-127b8627ba5f" DesignTimeRectangle="782, 426, 334, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='user_profile_content' tag='DIV' data-testid='form-group' idx='2' /&gt;&lt;webctrl name='last_name' tag='INPUT' type='text' placeholder='Last Name' /&gt;" Guid="72cf826b-ac68-4c5a-9747-85cd19af4fad" InformativeScreenshot="51a950b5b9618bb2f46ca7f0a96f5794.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -250,7 +251,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Email" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_29" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[email]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Email" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_29" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[email]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="80331e4a-56e5-4fde-ba4f-127b8627ba5f" DesignTimeRectangle="435, 755, 681, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='user_profile_content' tag='DIV' data-testid='form-group' idx='7' /&gt;&lt;webctrl name='email' tag='INPUT' type='text' placeholder='Email Address' /&gt;" Guid="5ad2efd5-b881-46cf-96d0-758a7e82a85d" InformativeScreenshot="e6c306fb5d95b863b5cd9ef886b525b7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -261,7 +262,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Phone Num" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_30" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[phone_num]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Phone Num" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_30" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[phone_num]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="c1fd1461-6dd7-4854-85d4-ea6f6e63bc34" DesignTimeRectangle="0, 0, 0, 0" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='phone-number-label-home_phone' tag='INPUT' type='text' /&gt;" Guid="06a6881c-9bd5-40d3-98d8-121d99743ace" InformativeScreenshot="d3d7e4d6bd5f153e5bcf292e9e080045.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -272,7 +273,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Mobile Phone" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_31" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[phone_num]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Mobile Phone" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_31" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[phone_num]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="f369f7dd-e370-4e47-9d00-014cabc662c8" DesignTimeRectangle="510, 510, 606, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='phone-number-label-mobile_phone' tag='INPUT' type='text' name='mobile_phone' /&gt;" Guid="eb29b24d-eb2f-43c7-b92c-883a4149333c" InformativeScreenshot="9bbbd82d53e361a25d8a9e3bff059891.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -283,7 +284,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Street Address" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_32" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[address]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Street Address" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_32" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[address]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="f7993e66-4ef8-460a-adfe-b041872c1594" DesignTimeRectangle="1191, 693, 680, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='user_profile_content' tag='DIV' data-testid='form-group' idx='13' /&gt;&lt;webctrl name='street_address' tag='INPUT' type='text' /&gt;" Guid="16f82da1-f623-4877-ba20-447485a58678" InformativeScreenshot="635aefae6e2a6a927d29e1e7c180b4df.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -294,7 +295,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="Delay_4">
+                              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="Delay_4">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -302,7 +303,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </Delay>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Mobile Phone'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NClick_28" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Mobile Phone'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NClick_28" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="72857710-ef82-41c3-8c76-33c0b8b9d398" DesignTimeRectangle="435, 557, 681, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='phone-number-label-mobile_phone' tag='LABEL' /&gt;" Guid="20d6668d-1f8b-4baf-b4fd-31d22a580fd5" InformativeScreenshot="bb2c899d51457bd3586ff3c5e3849fb6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NClick.Target>
@@ -313,7 +314,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NClick>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: City" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_33" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[city]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: City" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_33" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[city]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="6344ab9f-0045-4e79-90f9-dd0e3dc58c85" DesignTimeRectangle="1191, 571, 680, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='city' tag='INPUT' type='text' /&gt;" Guid="37409878-294e-4a4e-a89a-b0df91332295" InformativeScreenshot="5e63706da91dd0922d7c2bdcbaeb0985.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -324,7 +325,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <uix:NSelectItem ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Select Item: Country" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[country]" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                              <uix:NSelectItem ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Select Item: Country" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[country]" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                                 <uix:NSelectItem.Items>
                                   <scg:List x:TypeArguments="x:String" Capacity="50">
                                     <x:String>Azerbaijan</x:String>
@@ -389,7 +390,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NSelectItem>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Postal/Zip Code" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_34" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[postal_code]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: Postal/Zip Code" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_34" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[postal_code]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="2ab15cde-ab96-4520-a94d-c55555cc559a" DesignTimeRectangle="1191, 836, 680, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='postal' tag='INPUT' type='text' /&gt;" Guid="f1865749-376f-4773-b906-050f80b604e5" InformativeScreenshot="63f7f4644a4917b687b302a1a5329f41.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -400,7 +401,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <uix:NSelectItem ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Select Item-DOB - Month" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="[month]" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                              <uix:NSelectItem ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Select Item-DOB - Month" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="[month]" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                                 <uix:NSelectItem.Items>
                                   <scg:List x:TypeArguments="x:String" Capacity="13">
                                     <x:String>Select a month...</x:String>
@@ -428,7 +429,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NSelectItem>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into:DOB_Day" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_35" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[day]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into:DOB_Day" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_35" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[day]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="d6a64c05-5dd4-4ff0-a6dd-11391a593ccf" DesignTimeRectangle="724, 738, 161, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='birth-date-text-dob_day' tag='INPUT' placeholder='xx' /&gt;" Guid="64b03379-a47a-485b-a73f-b3ffc319dea1" InformativeScreenshot="b8eeb0cdb95252204c05d60a54986361.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -439,7 +440,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: DOB- Year" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_36" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[year]" Version="V5">
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" ContinueOnError="True" DelayAfter="0" DelayBefore="0" DisplayName="Type Into: DOB- Year" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_36" InteractionMode="Simulate" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Text="[year]" Version="V5">
                                 <uix:NTypeInto.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="ab66cfdb-c1dd-43d5-a5b0-6dd76df82808" DesignTimeRectangle="897, 738, 219, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-labelledby='birth-date-text-dob_year' tag='INPUT' placeholder='xxxx' /&gt;" Guid="b8e75b09-5101-4a9c-af7d-b9beadd12f1d" InformativeScreenshot="357f94ebad4c9957b3991c2b9fba6231.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NTypeInto.Target>
@@ -450,11 +451,11 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NTypeInto>
-                              <If sap2010:Annotation.AnnotationText="Reminders..." Condition="[text_consent = &quot;YES&quot;]" DisplayName="If- text_consent = &quot;YES&quot;" sap:VirtualizedContainerService.HintSize="451.2,836" sap2010:WorkflowViewState.IdRef="If_6">
+                              <If sap2010:Annotation.AnnotationText="Reminders..." Condition="[text_consent = &quot;YES&quot;]" DisplayName="If- text_consent = &quot;YES&quot;" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="If_6">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -549,7 +550,7 @@
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <ui:CommentOut DisplayName="Click: Save" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                              <ui:CommentOut DisplayName="Click: Save" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                                 <ui:CommentOut.Body>
                                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_59">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -577,7 +578,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:CommentOut>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save &amp; Send Welcome Ema…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NClick_44" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save &amp; Send Welcome Ema…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NClick_44" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="4a35a849-9cf7-422a-8b41-15c5397cf7a5" DesignTimeRectangle="1574, 985, 259, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Save &amp;amp; Send Welcome Email' parentid='user_profile_content' tag='BUTTON' visibleinnertext='Save &amp;amp; Send Welcome Email' /&gt;" Guid="4e162e3d-b7a0-45bc-a1f8-32f196182efd" InformativeScreenshot="5235fd2edf83b83172838826de7cd01b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='New - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NClick.Target>
@@ -588,7 +589,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NClick>
-                              <ui:CommentOut DisplayName="Click: Cancel" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                              <ui:CommentOut DisplayName="Click: Cancel" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_5">
                                 <ui:CommentOut.Body>
                                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -616,7 +617,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:CommentOut>
-                              <uix:NCheckState sap2010:Annotation.AnnotationText="Check Client Category and Send Form Accordingly from jane..." DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,105.6" sap2010:WorkflowViewState.IdRef="NCheckState_16" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                              <uix:NCheckState sap2010:Annotation.AnnotationText="Check Client Category and Send Form Accordingly from jane..." DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,105.6" sap2010:WorkflowViewState.IdRef="NCheckState_16" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                                 <uix:NCheckState.IfExists>
                                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,300" sap2010:WorkflowViewState.IdRef="Sequence_52">
                                     <sap:WorkflowViewStateService.ViewState>
@@ -1192,7 +1193,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NCheckState>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Client Status updated = Existing" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="451.2,380.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_3" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;Existing&quot;]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Client Status updated = Existing" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,380.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_3" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;Existing&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -1225,7 +1226,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <ui:LogMessage sap2010:Annotation.AnnotationText="Client Add Successfully" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Client has been Added Successfully: &quot;+first_name+&quot; &quot;+last_name + Environment.NewLine + &quot; Row no: &quot;+index.ToString]">
+                              <ui:LogMessage sap2010:Annotation.AnnotationText="Client Add Successfully" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Client has been Added Successfully: &quot;+first_name+&quot; &quot;+last_name + Environment.NewLine + &quot; Row no: &quot;+index.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1237,7 +1238,7 @@
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="484.8,24.8" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_56">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1264,13 +1265,13 @@
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486.4,659.2" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="451.2,659.2" sap2010:WorkflowViewState.IdRef="Sequence_57">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Client Status updated = New&#xA;Because Client Profile creation failed" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="452.8,394.4" sap2010:WorkflowViewState.IdRef="WriteCellConnections_4" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;New&quot;]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Client Status updated = New&#xA;Because Client Profile creation failed" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="417.6,394.4" sap2010:WorkflowViewState.IdRef="WriteCellConnections_4" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;New&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -1303,7 +1304,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <ui:LogMessage sap2010:Annotation.AnnotationText="Exception Message" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452.8,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_12" Message="[&quot;Client Profile Creation Failed... &quot;+first_name + &quot; &quot;+ last_name + Environment.NewLine + &quot;Failed Reason: &quot;+Exception.Message+ Environment.NewLine + &quot;Failed Row no: &quot;+index.ToString]">
+                              <ui:LogMessage sap2010:Annotation.AnnotationText="Exception Message" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="417.6,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_12" Message="[&quot;Client Profile Creation Failed... &quot;+first_name + &quot; &quot;+ last_name + Environment.NewLine + &quot;Failed Reason: &quot;+Exception.Message+ Environment.NewLine + &quot;Failed Row no: &quot;+index.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -1317,7 +1318,7 @@
                         </Catch>
                       </TryCatch.Catches>
                       <TryCatch.Finally>
-                        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="486.4,94.4" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="451.2,94.4" sap2010:WorkflowViewState.IdRef="Sequence_58">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1329,14 +1330,47 @@
                   </Sequence>
                 </uix:NCheckState.IfExists>
                 <uix:NCheckState.IfNotExists>
-                  <Sequence sap2010:Annotation.AnnotationText="As client Already Exist" DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="521.6,56" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence sap2010:Annotation.AnnotationText="As client Already Exist" DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,467.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
+                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="As client Already Exist" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,372" sap2010:WorkflowViewState.IdRef="WriteCellConnections_5" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;Existing&quot;]">
+                      <uga:WriteCellConnections.FileIdBackup>
+                        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UrlOrId">
+                          <usau:BackupSlot.BackupValues>
+                            <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+                              <x:Null />
+                              <x:Null />
+                            </scg:List>
+                          </usau:BackupSlot.BackupValues>
+                        </usau:BackupSlot>
+                      </uga:WriteCellConnections.FileIdBackup>
+                      <uga:WriteCellConnections.Item>
+                        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" InputMode="UrlOrId">
+                          <ugam:DriveItemArgument.FullPathHint>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ugam:DriveItemArgument.FullPathHint>
+                          <ugam:DriveItemArgument.ParentIdFullPathHint>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ugam:DriveItemArgument.ParentIdFullPathHint>
+                        </ugam:DriveItemArgument>
+                      </uga:WriteCellConnections.Item>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uga:WriteCellConnections>
                   </Sequence>
                 </uix:NCheckState.IfNotExists>
                 <uix:NCheckState.Target>
