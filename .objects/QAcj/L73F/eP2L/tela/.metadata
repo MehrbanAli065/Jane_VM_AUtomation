@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Testy McTester",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "telaVEoOdkK1gFb26Wagbg",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/telaVEoOdkK1gFb26Wagbg",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/eP2LHPo0zUigRShQKrQ91g",
+  "Created": "2026-03-03T20:05:34.7364411Z",
+  "Updated": "2026-03-03T20:05:34.7364411Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

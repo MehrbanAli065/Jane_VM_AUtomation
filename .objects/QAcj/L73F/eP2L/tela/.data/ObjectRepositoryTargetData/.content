@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-Wp_bczgMUq4Yz2TLoMd2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="d8a83a2a-ea6f-43b2-9a91-626cd32f0dd3" DesignTimeRectangle="23, 382, 260, 51" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='user-list' tag='A' visibleinnertext='*' /&gt;" Guid="175dbf84-f496-457c-9c94-b04858859afd" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='* - Staff - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="29d4b8ee1263f46553f24363d5a0a5ab.jpg" xmlns="">0_GV0r3bHi0exITW5CzJBiw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
