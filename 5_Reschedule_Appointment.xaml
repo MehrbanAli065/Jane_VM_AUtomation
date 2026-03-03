@@ -134,7 +134,7 @@
       <AssemblyReference>UiPath.GSuite</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_5_Reschedule_Appointment" sap:VirtualizedContainerService.HintSize="1007.6,5722.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_5_Reschedule_Appointment" sap:VirtualizedContainerService.HintSize="1002,5244.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Region" Name="element_position" />
     </Sequence.Variables>
@@ -143,21 +143,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Reschedule_Appointment" sap:VirtualizedContainerService.HintSize="616,5699.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Reschedule_Appointment" sap:VirtualizedContainerService.HintSize="616,5221.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome-Reschedule Appointment(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="582.4,5616" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="97e11371-32ec-4506-a388-b8378f89759a" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome-Reschedule Appointment(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="582.4,5138.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="97e11371-32ec-4506-a388-b8378f89759a" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="556.8,5352" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="556.8,4874.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Try>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,4452.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="555.2,3975.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="boxes" />
                     <Variable x:TypeArguments="x:String" Name="staff_url" />
@@ -287,28 +287,64 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:MultipleAssign>
-                  <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click on Appointment which u want to reschedule&#xA;Note: Pass the client name later " ClickType="Single" DisplayName="Click:" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="521.6,242.4" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="824, 718, 210, 60" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='pane-center' tag='DIV' visibleinnertext='{0} - *' /&gt;&lt;webctrl class='inner-padding' parentid='pane-center' tag='DIV' /&gt;&quot;, Start_time)]" Guid="f8658f59-8917-4c84-ad5c-52355335f5df" InformativeScreenshot="b5f732e21a55117052ca857dd29d087a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                    </uix:NClick.Target>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="521.6,60.8" sap2010:WorkflowViewState.IdRef="TryCatch_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
-                  <uix:NCheckState sap2010:Annotation.AnnotationText="Check If Appointment appears or not&#xA;Then Click Move Button" DisplayName="Check App State 'Appointment'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="521.6,3667.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
+                    <TryCatch.Try>
+                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click on Appointment which u want to reschedule&#xA;Note: Pass the client name later " ClickType="Single" DisplayName="Click:" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,206.4" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Timeout="10" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="824, 718, 210, 60" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='pane-center' tag='DIV' visibleinnertext='{0} - *' /&gt;&lt;webctrl class='inner-padding' parentid='pane-center' tag='DIV' /&gt;&quot;, Start_time)]" Guid="f8658f59-8917-4c84-ad5c-52355335f5df" InformativeScreenshot="b5f732e21a55117052ca857dd29d087a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_8">
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,233.6" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Trace" Message="[&quot;Appointment to be scheduled not found in jane&quot;]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                    <TryCatch.Finally>
+                      <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </TryCatch.Finally>
+                  </TryCatch>
+                  <uix:NCheckState sap2010:Annotation.AnnotationText="Check If Appointment appears or not&#xA;Then Click Move Button" DisplayName="Check App State 'Appointment'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="521.6,3371.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="520,3020.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,2607.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Move'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Move'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="deed8d8c-7f4b-4632-8d3c-8a3a63ef9eb6" DesignTimeRectangle="1611, 715, 73, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='appointment_move' tag='A' aaname='Move' /&gt;" Guid="7b3d96cc-4193-41be-af0e-ad7755a36677" InformativeScreenshot="864393edb48239a6b43cd091b1e3cc6a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NClick.Target>
@@ -319,7 +355,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <ui:LogMessage sap2010:Annotation.AnnotationText="&quot;Appointment clicked Successfully...&quot;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Appointmnet: move button Clicked Succesfully&quot;]">
+                        <ui:LogMessage sap2010:Annotation.AnnotationText="&quot;Appointment clicked Successfully...&quot;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Appointmnet: move button Clicked Succesfully&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -328,7 +364,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:LogMessage>
-                        <uix:NGoToUrl sap2010:Annotation.AnnotationText="Go to reschedule date" DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="486.4,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_6" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Url="[&quot;https://shiftgritab.janeapp.com/admin#schedule/staff/&quot;+Staff_ID+&quot;/&quot;+reschedule_date]" Version="V5">
+                        <uix:NGoToUrl sap2010:Annotation.AnnotationText="Go to reschedule date" DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_6" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Url="[&quot;https://shiftgritab.janeapp.com/admin#schedule/staff/&quot;+Staff_ID+&quot;/&quot;+reschedule_date]" Version="V5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -337,7 +373,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NGoToUrl>
-                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="Delay_7">
+                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="Delay_7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -345,7 +381,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </Delay>
-                        <TryCatch sap2010:Annotation.AnnotationText="click: UL" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="486.4,92" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                        <TryCatch sap2010:Annotation.AnnotationText="click: UL" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -354,7 +390,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DisplayName="Click 'UL'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484.8,161.6" sap2010:WorkflowViewState.IdRef="NClick_32" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DisplayName="Click 'UL'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484.8,161.6" sap2010:WorkflowViewState.IdRef="NClick_32" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Timeout="10" Version="V5">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="403, 478, 210, 1680" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='appointments' idx='*' parentid='pane-center' tag='UL' /&gt;" Guid="37c64fb6-cef3-4bd8-98d2-cf7d7b78dbcc" InformativeScreenshot="6b87815d0f0f7a4137bcf97b9f6f6d1d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                               </uix:NClick.Target>
@@ -419,7 +455,7 @@
                             </Sequence>
                           </TryCatch.Finally>
                         </TryCatch>
-                        <uix:NCheckState DisplayName="Check App State 'Are you sure you want t…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
+                        <uix:NCheckState DisplayName="Check App State 'Are you sure you want t…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
                           <uix:NCheckState.IfExists>
                             <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,176.8" sap2010:WorkflowViewState.IdRef="Sequence_43">
                               <sap:WorkflowViewStateService.ViewState>
@@ -468,7 +504,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
-                        <TryCatch sap2010:Annotation.AnnotationText="ScreenPlay" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="486.4,92" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+                        <TryCatch sap2010:Annotation.AnnotationText="ScreenPlay" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="TryCatch_8">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -532,8 +568,8 @@
                             </Sequence>
                           </TryCatch.Finally>
                         </TryCatch>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486.4,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[&quot;ScreenPlay Activity Executed&quot;]" />
-                        <uix:NCheckState DisplayName="Check App State: 'Select the treatment ty…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="NCheckState_11" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Trace" Message="[&quot;ScreenPlay Activity Executed&quot;]" />
+                        <uix:NCheckState DisplayName="Check App State: 'Select the treatment ty…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NCheckState_11" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
                           <uix:NCheckState.IfExists>
                             <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,252.8" sap2010:WorkflowViewState.IdRef="Sequence_47">
                               <sap:WorkflowViewStateService.ViewState>
@@ -567,7 +603,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
-                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="Delay_11">
+                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="Delay_11">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -575,17 +611,17 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </Delay>
-                        <uix:NCheckState DisplayName="Check app state and click edit icon if exists" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,2106.4" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
+                        <uix:NCheckState DisplayName="Check app state and click edit icon if exists" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,1692.8" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,1672" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,1013.6" sap2010:WorkflowViewState.IdRef="Sequence_49">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_17" Message="[&quot;appeared&quot;]" />
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click: Edit Icon" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Trace" Message="[&quot;Edit Panel appeared&quot;]" />
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click: Edit Icon" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="472aae65-e731-4b3e-a5b0-f9cdde51ae6b" CvElementArea="1836, 766, 48, 46" CvType="Icon" DesignTimeRectangle="1839, 769, 43, 43" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' class='btn btn-default btn-round' idx='1' /&gt;" Guid="c654d708-f20c-4916-912d-cf4b5025d06b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIjSURBVGhD7ZiLbsMgDEX3T/3/n2qrPqS2TKcSyHFNAo5JF2lXutKSAD4JroH9pB3rH/7xeKT7/Z4ul0s6n8/pdDql4/FYzDX3eU472kfIDf98PtPtdntDSdBW04/+jONVNzzBrterCeQ143leogueKbeCR5nxe9QE/3q93vlqBYw2cYjXokV4ptOb114TryWNZuEZQFeOrUzcpReowjN1W39xbeLPpVAVfqscXzIcNZnwo6tKr2tV6AOePLMG+Lat/P+Aj16AogyX1gR+i69+OBzetp4tWX/9CTx7DatTlDO49wXgk5rAjyyNGjzbalszfFIFnm2q1SHCGVKD5/s9ltvpAj+qPGpQeZ3v9ViWzQI/YlHSoBlW/t1ruWgV+Oh8l8DaVvtWy7wv8JEbMAtY2+rXYjizCrzV0GMLVNrq0+usUHgLVtrq43FWGLwFK2318TorJOclnIaWzyJs5vyaaqMBR4Fjs9qsqfMadhQ4Nuv8mhVWwo8Ex+YKO3JvE2lzb4OiV9loy3xHE/jR+/m1nt3P/9Xza/bsSQrt9gyL/urX118dfcCjUQcTr2V5lDLh0YjDicdyUdKqwu/6f5WIPIs8pPSYuFaeS83CIwbYegaItwSOFuERU7fVb4A4c6ki1QSfNboK1apKTV3wiOmMXsgYryVNtLrhswjGXsP7e6Af/T3QWW54KbapTDn5CpSuUFxzn+e0k9vaNQqB/5Z2DJ/SL0oftq6vk5H4AAAAAElFTkSuQmCC" InformativeScreenshot="1ee592b9bc1026ccad1cdad06960046c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NClick.Target>
@@ -596,11 +632,11 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NClick>
-                              <TryCatch sap2010:Annotation.AnnotationText="session/treatment type" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="451.2,750.4" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                              <TryCatch sap2010:Annotation.AnnotationText="session/treatment type" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="TryCatch_9">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -698,7 +734,7 @@
                                   </Sequence>
                                 </TryCatch.Finally>
                               </TryCatch>
-                              <uix:NSelectItem DisplayName="Select Item: Start Time" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,198.4" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[rescheduleTime]" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
+                              <uix:NSelectItem DisplayName="Select Item: Start Time" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198.4" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[rescheduleTime]" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
                                 <uix:NSelectItem.Items>
                                   <scg:List x:TypeArguments="x:String" Capacity="14">
                                     <x:String>8:00 AM</x:String>
@@ -727,7 +763,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NSelectItem>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Update Appointment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NClick_37" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Update Appointment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="NClick_37" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="97e11371-32ec-4506-a388-b8378f89759a" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="7eb81860-9d0a-4ca4-9e3a-0f12158371ba" DesignTimeRectangle="1703, 373, 195, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Update Appointment' parentid='pane-right' tag='BUTTON' idx='*' /&gt;" Guid="0c09f02f-ba43-4b8a-8a11-30e7a0fff278" InformativeScreenshot="a74601895d5084b5d5dd012758686334.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NClick.Target>
@@ -738,7 +774,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NClick>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Booked" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_8" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Booked&quot;]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Booked" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_8" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Booked&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -771,7 +807,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="AppointmentDate = Reschedule Date" AuthScopesInvalid="False" Cell="[&quot;A&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment Date_Column" HideCell="False" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_9" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_date]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="AppointmentDate = Reschedule Date" AuthScopesInvalid="False" Cell="[&quot;A&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment Date_Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_9" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_date]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -804,7 +840,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Time = Reschedule Time" AuthScopesInvalid="False" Cell="[&quot;B&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment Time_Column" HideCell="False" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_10" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[rescheduleTime]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Time = Reschedule Time" AuthScopesInvalid="False" Cell="[&quot;B&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment Time_Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_10" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[rescheduleTime]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -837,7 +873,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <ui:LogMessage sap2010:Annotation.AnnotationText="Successfully Rescheduled an Appointment:" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_18" Message="[&quot;Appointment has been Rescheduled Successfully for the client: &quot;+email+&quot; | Rescheduled Date and Time: &quot;+ reschedule_date+ &quot; &quot;+rescheduleTime +  &quot; at Row index: &quot;+index.ToString]">
+                              <ui:LogMessage sap2010:Annotation.AnnotationText="Successfully Rescheduled an Appointment:" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_18" Message="[&quot;Appointment has been Rescheduled Successfully for the client: &quot;+email+&quot; | Rescheduled Date and Time: &quot;+ reschedule_date+ &quot; &quot;+rescheduleTime +  &quot; at Row index: &quot;+index.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -849,12 +885,46 @@
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="484.8,94.4" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,339.2" sap2010:WorkflowViewState.IdRef="Sequence_50">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Trace" Message="[&quot;Editor Panel not opened&quot;]" />
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Rescheduling Failed" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,96.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_12" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Rescheduling Failed&quot;]">
+                                <uga:WriteCellConnections.FileIdBackup>
+                                  <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="UrlOrId">
+                                    <usau:BackupSlot.BackupValues>
+                                      <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+                                        <x:Null />
+                                        <x:Null />
+                                      </scg:List>
+                                    </usau:BackupSlot.BackupValues>
+                                  </usau:BackupSlot>
+                                </uga:WriteCellConnections.FileIdBackup>
+                                <uga:WriteCellConnections.Item>
+                                  <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID3}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" InputMode="UrlOrId">
+                                    <ugam:DriveItemArgument.FullPathHint>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ugam:DriveItemArgument.FullPathHint>
+                                    <ugam:DriveItemArgument.ParentIdFullPathHint>
+                                      <InArgument x:TypeArguments="x:String">
+                                        <Literal x:TypeArguments="x:String" Value="" />
+                                      </InArgument>
+                                    </ugam:DriveItemArgument.ParentIdFullPathHint>
+                                  </ugam:DriveItemArgument>
+                                </uga:WriteCellConnections.Item>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uga:WriteCellConnections>
                             </Sequence>
                           </uix:NCheckState.IfNotExists>
                           <uix:NCheckState.Target>
@@ -870,24 +940,24 @@
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="520,252.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="484.8,370.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage sap2010:Annotation.AnnotationText="&quot;Appointment not clicked...&quot;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;Appointment not clicked...&quot;]">
+                        <ui:LogMessage sap2010:Annotation.AnnotationText="&quot;Appointment not clicked...&quot;" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,209.6" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Trace" Message="[&quot;Appointment not clicked...&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:LogMessage>
                         <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Rescheduling Failed" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,96.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_11" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Rescheduling Failed&quot;]">
                           <uga:WriteCellConnections.FileIdBackup>
-                            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="UrlOrId">
+                            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID4" StoredValue="UrlOrId">
                               <usau:BackupSlot.BackupValues>
                                 <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
                                   <x:Null />
@@ -897,7 +967,7 @@
                             </usau:BackupSlot>
                           </uga:WriteCellConnections.FileIdBackup>
                           <uga:WriteCellConnections.Item>
-                            <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID3}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" InputMode="UrlOrId">
+                            <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID4}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" InputMode="UrlOrId">
                               <ugam:DriveItemArgument.FullPathHint>
                                 <InArgument x:TypeArguments="x:String">
                                   <Literal x:TypeArguments="x:String" Value="" />
@@ -1051,7 +1121,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Rescheduling Failed" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="521.6,394.4" sap2010:WorkflowViewState.IdRef="WriteCellConnections_2" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Rescheduling Failed&quot;]">
                         <uga:WriteCellConnections.FileIdBackup>
-                          <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID4" StoredValue="UrlOrId">
+                          <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID5" StoredValue="UrlOrId">
                             <usau:BackupSlot.BackupValues>
                               <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
                                 <x:Null />
@@ -1061,7 +1131,7 @@
                           </usau:BackupSlot>
                         </uga:WriteCellConnections.FileIdBackup>
                         <uga:WriteCellConnections.Item>
-                          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID4}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" InputMode="UrlOrId">
+                          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID5}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" InputMode="UrlOrId">
                             <ugam:DriveItemArgument.FullPathHint>
                               <InArgument x:TypeArguments="x:String">
                                 <Literal x:TypeArguments="x:String" Value="" />
