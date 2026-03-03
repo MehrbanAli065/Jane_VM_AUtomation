@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ezkFcFhhmUmlHl3Lgu8A5g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="3c81b99f-dbfb-4b71-8b47-05496ddd7e33" DesignTimeRectangle="1840, 546, 16, 17" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='img' parentid='pane-right-extended' tag='svg' class='svg-inline--fa fa-square ' idx='1' /&gt;" Guid="5c8dcbdd-572a-4ca2-a04f-e32ea60c45c9" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9ef34430b8ed9948be01514db2e839de.jpg" xmlns="">0ZgqjX9YeTUij9igTjhX24w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
