@@ -130,7 +130,13 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1002,3812" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1213.2,7296" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd2:DataTable" Name="DT_Client" />
       <Variable x:TypeArguments="sd2:DataTable" Name="DT_Appointments" />
@@ -141,7 +147,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Jane_Development" sap:VirtualizedContainerService.HintSize="723.2,3788.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Jane_Development" sap:VirtualizedContainerService.HintSize="792,7272.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="monthDict" />
         <Variable x:TypeArguments="x:String" Name="month" />
@@ -153,8 +159,8 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="/c &quot;C:\Users\Administrator\Desktop\jane.bat&quot;" DisplayName="Start Process" FileName="C:\Windows\System32\cmd.exe" sap:VirtualizedContainerService.HintSize="689.6,120" sap2010:WorkflowViewState.IdRef="StartProcess_9" />
-      <Sequence DisplayName="Client Intake Booking" sap:VirtualizedContainerService.HintSize="689.6,3585.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="/c &quot;C:\Users\Administrator\Desktop\jane.bat&quot;" DisplayName="Start Process" FileName="C:\Windows\System32\cmd.exe" sap:VirtualizedContainerService.HintSize="758.4,120" sap2010:WorkflowViewState.IdRef="StartProcess_12" />
+      <Sequence DisplayName="Client Intake Booking" sap:VirtualizedContainerService.HintSize="758.4,7069.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="Client_DOB" />
           <Variable x:TypeArguments="x:String" Name="Client_First_Name" />
@@ -175,15 +181,15 @@
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence sap2010:Annotation.AnnotationText="" DisplayName="01_LogIn Module" sap:VirtualizedContainerService.HintSize="656,88" sap2010:WorkflowViewState.IdRef="Sequence_151">
+        <Sequence sap2010:Annotation.AnnotationText="" DisplayName="01_LogIn Module" sap:VirtualizedContainerService.HintSize="724.8,88" sap2010:WorkflowViewState.IdRef="Sequence_185">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.4,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_26">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,542.4" sap2010:WorkflowViewState.IdRef="CommentOut_26">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484.8,432" sap2010:WorkflowViewState.IdRef="Sequence_164">
                 <sap:WorkflowViewStateService.ViewState>
@@ -191,7 +197,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard sap2010:Annotation.AnnotationText="LastPass_LogIn" AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="LogIN_Via_Last_Pass" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,380.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="1a8b3552-7a44-470c-a4a1-f2503f0451d4" Version="V2" WindowResize="Maximize">
+                <uix:NApplicationCard sap2010:Annotation.AnnotationText="LastPass_LogIn" AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="LogIN_Via_Last_Pass" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="451.2,372" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="1a8b3552-7a44-470c-a4a1-f2503f0451d4" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -661,7 +667,7 @@
             </sap:WorkflowViewStateService.ViewState>
           </uix:NApplicationCard>
         </Sequence>
-        <Sequence sap2010:Annotation.AnnotationText="Fecthing Data From Google Sheet" DisplayName="Reading Google Sheet" sap:VirtualizedContainerService.HintSize="656,3414.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <Sequence sap2010:Annotation.AnnotationText="Fecthing Data From Google Sheet" DisplayName="Reading Google Sheet" sap:VirtualizedContainerService.HintSize="724.8,6898.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -669,7 +675,7 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="Use Google SpreadSheet" DisplayName="Fetching Data From Sheet" sap:VirtualizedContainerService.HintSize="622.4,3300" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence sap2010:Annotation.AnnotationText="Use Google SpreadSheet" DisplayName="Fetching Data From Sheet" sap:VirtualizedContainerService.HintSize="691.2,6784" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -677,13 +683,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="techbugs86@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Reading...&#xA;Client Details Sheet &amp;&#xA;Appointment Details Sheet" ConnectionAccountName="Mehban_Org" ConnectionId="FolderItemId" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="588.8,963.2" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_3" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="techbugs86@gmail.com">
+            <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Reading...&#xA;Client Details Sheet &amp;&#xA;Appointment Details Sheet" ConnectionAccountName="Mehban_Org" ConnectionId="FolderItemId" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="657.6,117.6" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_3" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
               <ugas:GoogleSheetsApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,547.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,535.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -726,13 +732,13 @@
               </ugas:GoogleSheetsApplicationScope.CredentialSecret>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ugas:GoogleSheetsApplicationScope>
-            <Sequence sap2010:Annotation.AnnotationText="Add New Client If not exist&#xA;Else: Exist then Book Appointment, Schedule, Reschedule, Cancel, Recurring" DisplayName="Add New Client:" sap:VirtualizedContainerService.HintSize="588.8,2174.4" sap2010:WorkflowViewState.IdRef="Sequence_62">
+            <Sequence sap2010:Annotation.AnnotationText="Add New Client If not exist&#xA;Else: Exist then Book Appointment, Schedule, Reschedule, Cancel, Recurring" DisplayName="Add New Client:" sap:VirtualizedContainerService.HintSize="657.6,3474.4" sap2010:WorkflowViewState.IdRef="Sequence_62">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="Client_DOB_Month" />
                 <Variable x:TypeArguments="x:String" Name="Client_DOB_Day" />
@@ -749,7 +755,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:FilterDataTable sap2010:Annotation.AnnotationText="For adding new client/Profile creation" DataTable="[DT_Client]" DisplayName="Filter DT_Client" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="555.2,88" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[DT_Add_New_Client]" SelectColumnsMode="Remove">
+              <ui:FilterDataTable sap2010:Annotation.AnnotationText="For adding new client/Profile creation" DataTable="[DT_Client]" DisplayName="Filter DT_Client" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="555.2,225.6" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[DT_Add_New_Client]" SelectColumnsMode="Remove">
                 <ui:FilterDataTable.Filters>
                   <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                     <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -783,13 +789,13 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:FilterDataTable>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[DT_Add_New_Client]" DisplayName="For Each Row in Filter_DT_Add_New_Client" sap:VirtualizedContainerService.HintSize="555.2,1949.6" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[DT_Add_New_Client]" DisplayName="For Each Row in Filter_DT_Add_New_Client" sap:VirtualizedContainerService.HintSize="555.2,3112" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd2:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,1776.8" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="553.6,2939.2" sap2010:WorkflowViewState.IdRef="Sequence_75">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Int32" Default="0" Name="Client_Status_index" />
                         <Variable x:TypeArguments="x:String" Name="Client_Text_Consent" />
@@ -801,7 +807,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:MultipleAssign sap2010:Annotation.AnnotationText="Fetching Data From Client Sheet" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="520,92" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign sap2010:Annotation.AnnotationText="Fetching Data From Client Sheet" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="520,621.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="32">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -934,7 +940,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:MultipleAssign>
-                      <If sap2010:Annotation.AnnotationText="if Client_Status = &quot;New&quot; Then Add client and Book an Appointment" Condition="[Client_Status = &quot;New&quot;]" sap:VirtualizedContainerService.HintSize="520,105.6" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If sap2010:Annotation.AnnotationText="if Client_Status = &quot;New&quot; Then Add client and Book an Appointment" Condition="[Client_Status = &quot;New&quot;]" sap:VirtualizedContainerService.HintSize="520,738.4" sap2010:WorkflowViewState.IdRef="If_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -2532,7 +2538,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
             </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="588.8,48" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="657.6,3077.6" sap2010:WorkflowViewState.IdRef="CommentOut_13">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="622.4,2936" sap2010:WorkflowViewState.IdRef="Sequence_76">
                   <sap:WorkflowViewStateService.ViewState>

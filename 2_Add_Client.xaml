@@ -133,25 +133,25 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_02_Add_Client_and_Book_Appointment" sap:VirtualizedContainerService.HintSize="1010,6352.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_02_Add_Client_and_Book_Appointment" sap:VirtualizedContainerService.HintSize="801.2,7996.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Add_Client" sap:VirtualizedContainerService.HintSize="697.6,6329.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Add_Client" sap:VirtualizedContainerService.HintSize="697.6,7973.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Search and Add Client if not exist" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="664,6246.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Search and Add Client if not exist" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="664,7890.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="662.4,6052.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="662.4,7696.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -192,9 +192,9 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <uix:NCheckState sap2010:Annotation.AnnotationText="Check If client exists or not..&#xA;if not exist Then add the client else skip" DisplayName="Check App State 'No Results'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="628.8,5745.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+              <uix:NCheckState sap2010:Annotation.AnnotationText="Check If client exists or not..&#xA;if not exist Then add the client else skip" DisplayName="Check App State 'No Results'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="628.8,7389.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="627.2,5356" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="627.2,6537.6" sap2010:WorkflowViewState.IdRef="Sequence_36">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -218,11 +218,11 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGoToUrl>
-                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="593.6,5073.6" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="593.6,6255.2" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                       <TryCatch.Try>
-                        <uix:NCheckState sap2010:Annotation.AnnotationText="Client Profile Creation" DisplayName="Check App State:" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="592,4124.8" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                        <uix:NCheckState sap2010:Annotation.AnnotationText="Client Profile Creation" DisplayName="Check App State:" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="592,5306.4" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="590.4,3807.2" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="590.4,4937.6" sap2010:WorkflowViewState.IdRef="Sequence_55">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -617,9 +617,9 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:CommentOut>
-                              <uix:NCheckState sap2010:Annotation.AnnotationText="Check Client Category and Send Form Accordingly from jane..." DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="556.8,2153.6" sap2010:WorkflowViewState.IdRef="NCheckState_16" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                              <uix:NCheckState sap2010:Annotation.AnnotationText="Check Client Category and Send Form Accordingly from jane..." DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="556.8,3284" sap2010:WorkflowViewState.IdRef="NCheckState_16" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                                 <uix:NCheckState.IfExists>
-                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="555.2,1730.4" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="555.2,2809.6" sap2010:WorkflowViewState.IdRef="Sequence_52">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -636,22 +636,22 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NClick>
-                                    <If sap2010:Annotation.AnnotationText="If Client Category is Individual" Condition="[client_category = &quot;Individual&quot;]" sap:VirtualizedContainerService.HintSize="521.6,92" sap2010:WorkflowViewState.IdRef="If_7">
+                                    <If sap2010:Annotation.AnnotationText="If Client Category is Individual" Condition="[client_category = &quot;Individual&quot;]" sap:VirtualizedContainerService.HintSize="521.6,1120" sap2010:WorkflowViewState.IdRef="If_7">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484.8,800.8" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484.8,852" sap2010:WorkflowViewState.IdRef="Sequence_42">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NCheckState sap2010:Annotation.AnnotationText="Client Intake Form" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,736.8" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                                          <uix:NCheckState sap2010:Annotation.AnnotationText="Client Intake Form" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,788" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                                             <uix:NCheckState.IfExists>
                                               <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,392" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                                 <Sequence.Variables>
@@ -904,7 +904,7 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <If sap2010:Annotation.AnnotationText="If Client Category is Couple" Condition="[client_category = &quot;Couples&quot;]" sap:VirtualizedContainerService.HintSize="521.6,1513.6" sap2010:WorkflowViewState.IdRef="If_9">
+                                    <If sap2010:Annotation.AnnotationText="If Client Category is Couple" Condition="[client_category = &quot;Couples&quot;]" sap:VirtualizedContainerService.HintSize="521.6,1564.8" sap2010:WorkflowViewState.IdRef="If_9">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -913,13 +913,13 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
-                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,1254.4" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,1305.6" sap2010:WorkflowViewState.IdRef="Sequence_50">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NCheckState sap2010:Annotation.AnnotationText="Client Intake Form" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,1190.4" sap2010:WorkflowViewState.IdRef="NCheckState_15" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
+                                          <uix:NCheckState sap2010:Annotation.AnnotationText="Client Intake Form" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,1241.6" sap2010:WorkflowViewState.IdRef="NCheckState_15" ScopeIdentifier="fe75ed82-e2af-4560-8fc4-9588acd436c7" Version="V5">
                                             <uix:NCheckState.IfExists>
                                               <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,776" sap2010:WorkflowViewState.IdRef="Sequence_48">
                                                 <Sequence.Variables>
@@ -1193,7 +1193,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NCheckState>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Client Status updated = Existing" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="556.8,380.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_3" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;Existing&quot;]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Client Status updated = Existing" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="556.8,380.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_3" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;Existing&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -1226,7 +1226,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <ui:LogMessage sap2010:Annotation.AnnotationText="Client Add Successfully" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Client has been Added Successfully: &quot;+first_name+&quot; &quot;+last_name + Environment.NewLine + &quot; Row no: &quot;+index.ToString]">
+                              <ui:LogMessage sap2010:Annotation.AnnotationText="Client Add Successfully" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556.8,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Client has been Added Successfully: &quot;+first_name+&quot; &quot;+last_name + Environment.NewLine + &quot; Row no: &quot;+index.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1238,7 +1238,7 @@
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,24.8" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="590.4,24.8" sap2010:WorkflowViewState.IdRef="Sequence_56">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1271,7 +1271,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Client Status updated = New&#xA;Because Client Profile creation failed" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="558.4,394.4" sap2010:WorkflowViewState.IdRef="WriteCellConnections_4" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;New&quot;]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Client Status updated = New&#xA;Because Client Profile creation failed" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="558.4,394.4" sap2010:WorkflowViewState.IdRef="WriteCellConnections_4" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;New&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -1330,15 +1330,15 @@
                   </Sequence>
                 </uix:NCheckState.IfExists>
                 <uix:NCheckState.IfNotExists>
-                  <Sequence sap2010:Annotation.AnnotationText="As client Already Exist" DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="627.2,56" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence sap2010:Annotation.AnnotationText="As client Already Exist" DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="627.2,467.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="As client Already Exist" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,372" sap2010:WorkflowViewState.IdRef="WriteCellConnections_5" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;Existing&quot;]">
+                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="As client Already Exist" AuthScopesInvalid="False" Cell="[&quot;J&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,372" sap2010:WorkflowViewState.IdRef="WriteCellConnections_5" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Details'" UseConnectionService="True" WhatToWrite="[&quot;Existing&quot;]">
                       <uga:WriteCellConnections.FileIdBackup>
                         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UrlOrId">
                           <usau:BackupSlot.BackupValues>
