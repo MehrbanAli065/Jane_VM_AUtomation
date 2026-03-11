@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FLMfi_0u-ku6DqHA9qKVDg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="6f2e8608-b630-4304-a5af-f494dd5da783" CvTextArea="411, 676, 104, 16" CvTextArgument="12:00 - 1:00 PM" CvType="Text" DesignTimeRectangle="411, 676, 104, 16" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="dc78775f-9e53-4d74-8368-a6a72cd36ef6" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Schedule - ShiftGrit - Jane - Google Chrome' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1d1a72341bac0e636e4c1640aef18916.jpg" xmlns="">0xBIBFtzBAUCpovc604BmjA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

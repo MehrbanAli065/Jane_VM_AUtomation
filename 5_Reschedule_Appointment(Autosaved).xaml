@@ -132,6 +132,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="_5_Reschedule_Appointment" sap:VirtualizedContainerService.HintSize="801.2,5270.4" sap2010:WorkflowViewState.IdRef="Sequence_1">

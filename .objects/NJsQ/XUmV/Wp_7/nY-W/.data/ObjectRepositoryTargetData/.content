@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZrvawCGw0UW1F2NiHPXpOw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="23aea836-2bf5-4bf4-a107-93bea4ed8185" CvElementArea="912, 428, 28, 26" CvTextArea="947, 431, 95, 20" CvTextArgument="Wednesday" CvType="CheckBox" DesignTimeRectangle="904, 419, 155, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' parentid='pane-right-extended' tag='LABEL' class='input-button' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Wednesday' /&gt;" Guid="4b6a5428-baaa-4030-95a1-2715a6aea951" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="23aea836-2bf5-4bf4-a107-93bea4ed8185" DesignTimeRectangle="950, 429, 90, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Wednesday' parentid='pane-right-extended' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Wednesday' /&gt;" Guid="9ae81c4c-a907-4312-9f2f-6bd9337d3c17" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="faf44a997ac121790bc922c533c17728.jpg" xmlns="">0cmE0YJShFk-SoAVej938HA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
