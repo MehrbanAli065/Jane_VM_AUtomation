@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Today - ShiftGrit - Jane(3)(1)",
+  "Type": "Screen",
+  "Id": "V1TNMW8ZFUeuA7eqQuJYPw",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/V1TNMW8ZFUeuA7eqQuJYPw",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/tmw0MYLLQkK4SeP3mopIGA",
+  "Created": "2026-03-12T14:07:20.8727221Z",
+  "Updated": "2026-03-12T14:07:20.8727221Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
