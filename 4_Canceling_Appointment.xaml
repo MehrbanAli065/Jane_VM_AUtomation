@@ -1,10 +1,13 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_4_Canceling_Appointment" this:_4_Canceling_Appointment.index="0" this:_4_Canceling_Appointment.appointment_date="Tuesday December 30, 2025" this:_4_Canceling_Appointment.Time="2:00" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_4_Canceling_Appointment" this:_4_Canceling_Appointment.appointment_date="Tuesday December 30, 2025" this:_4_Canceling_Appointment.Time="2:00" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
+    <x:Property Name="jane_Date" Type="InArgument(x:String)" />
+    <x:Property Name="apt_time" Type="InArgument(x:String)" />
+    <x:Property Name="apptm_date" Type="InArgument(x:String)" />
     <x:Property Name="reschedule_time" Type="InArgument(x:String)" />
     <x:Property Name="reschedule_date" Type="InArgument(x:String)" />
     <x:Property Name="apt_status" Type="InArgument(x:String)" />
     <x:Property Name="cancelation_Window" Type="InArgument(x:String)" />
-    <x:Property Name="index" Type="InArgument(x:Int32)" />
+    <x:Property Name="index" Type="InArgument(x:String)" />
     <x:Property Name="appointment_date" Type="InArgument(x:String)" />
     <x:Property Name="Time" Type="InArgument(x:String)" />
     <x:Property Name="email" Type="InArgument(x:String)" />
@@ -67,6 +70,9 @@
       <x:String>UiPath.GSuite.Activities</x:String>
       <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Contracts</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -132,27 +138,27 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="_4_Canceling_Appointment" sap:VirtualizedContainerService.HintSize="1006.8000000000001,4324.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_4_Canceling_Appointment" sap:VirtualizedContainerService.HintSize="886,4926.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Canceling Appointment" sap:VirtualizedContainerService.HintSize="580.8,4301.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Canceling Appointment" sap:VirtualizedContainerService.HintSize="716.8,4903.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Today - ShiftGrit - Jane(2)(1)" HealingAgentBehavior="[UiPath.UIAutomationNext.Enums.NHealingAgentBehavior.RecommendationOnly]" sap:VirtualizedContainerService.HintSize="547.2,4218.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Today - ShiftGrit - Jane(2)(1)" HealingAgentBehavior="[UiPath.UIAutomationNext.Enums.NHealingAgentBehavior.RecommendationOnly]" sap:VirtualizedContainerService.HintSize="683.2,4820" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="521.6,3954.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="657.6,4556" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Try>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,3598.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="656,4200" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd2:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
                     <Variable x:TypeArguments="x:String" Name="DT_Text" />
@@ -164,7 +170,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click : Client Tab" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click : Client Tab" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="622.4,60.8" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="98e5a8ce-adf3-40db-91b1-7cc84e24c4be" DesignTimeRectangle="234, 225, 83, 63" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Clients' parentid='app_nav_left' tag='A' href='/admin#patients' visibleinnertext='Clients' /&gt;" Guid="58ae72d7-6bad-4f42-a4c4-840b0a18ce02" InformativeScreenshot="cc8c05112bad2576a619bdfc2a968de1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
@@ -175,7 +181,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="Delay_3">
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="622.4,60.8" sap2010:WorkflowViewState.IdRef="Delay_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -183,7 +189,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Delay>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" DelayAfter="0" DisplayName="Type Into: Search Client Email" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Text="[email]" Version="V5">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="[UiPath.UIAutomationNext.Enums.NClickMode.None]" ClipboardMode="Never" DelayAfter="0" DisplayName="Type Into: Search Client Email" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="622.4,60.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Text="[email]" Version="V5">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="d4d464ec-6b15-4b5d-abf2-75f1968f7557" DesignTimeRectangle="22, 245, 300, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='user-list-search' tag='DIV' data-testid='form-group' /&gt;&lt;webctrl tag='INPUT' placeholder='Client Search...' type='search' /&gt;" Guid="e99ec522-aef6-4364-b622-18467dcca180" InformativeScreenshot="cd26661b07fdaf9cf85cc991b89f2c93.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
@@ -194,7 +200,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NTypeInto>
-                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="Delay_1">
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="622.4,60.8" sap2010:WorkflowViewState.IdRef="Delay_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -202,7 +208,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Delay>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click: Client name" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click: Client name" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="622.4,60.8" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="23, 374, 278, 114" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='user-list' tag='A' visibleinnertext='*' /&gt;" Guid="ca758856-5523-49e6-a518-06124e922498" InformativeScreenshot="4030db693ecb471de92104fd4b5842d8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Appointments - Client #* - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
@@ -213,7 +219,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Appointments'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Appointments'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="622.4,60.8" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="a3b70403-14f0-4292-950e-b61882e8f880" DesignTimeRectangle="628, 322, 134, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Appointments' parentid='user_profile_header' tag='A' /&gt;" Guid="f9e57707-67a6-4b80-b51f-56cebbbc80fc" InformativeScreenshot="9afec8abf3891c3dc26e597834b325b3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Client #* - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
@@ -224,22 +230,22 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <Assign sap2010:Annotation.AnnotationText="Assign Cancellation Date of Appointment" DisplayName="Assign-Appointment Date " sap:VirtualizedContainerService.HintSize="486.4,92" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign sap2010:Annotation.AnnotationText="Assign Cancellation Date of Appointment" DisplayName="Assign-Appointment Date " sap:VirtualizedContainerService.HintSize="622.4,209.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[Apt_Date]</OutArgument>
+                      <OutArgument x:TypeArguments="x:String">[apptm_date]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
                       <InArgument x:TypeArguments="x:String">[appointment_date]</InArgument>
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <Assign sap2010:Annotation.AnnotationText="Cancellation Start Time" DisplayName="Assign- Start Time" sap:VirtualizedContainerService.HintSize="486.4,92" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign sap2010:Annotation.AnnotationText="Cancellation Start Time" DisplayName="Assign- Start Time" sap:VirtualizedContainerService.HintSize="622.4,209.6" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[Start_Time]</OutArgument>
                     </Assign.To>
@@ -248,23 +254,24 @@
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                  <TryCatch sap2010:Annotation.AnnotationText="Click: for deleting an appt" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="622.4,92" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <TryCatch.Try>
                       <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Click an appointment which You want to cancel" ClickType="Single" DelayBefore="2" DisplayName="Click: " HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,56" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Timeout="10" Version="V5">
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="2dc7d868-fb4b-4922-a363-545ae012fcad" DesignTimeRectangle="689, 852, 412, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='col-lg-4' parentid='user_profile_content' tag='DIV' visibleinnertext='*{0} - {1}*' /&gt;&quot;, Apt_Date, Start_Time)]" Guid="f664e186-a636-433c-ade7-83bf87a9117c" InformativeScreenshot="0dccf5b9fbe624d0313bd388b04aa742.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Appointments - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="2dc7d868-fb4b-4922-a363-545ae012fcad" DesignTimeRectangle="689, 852, 412, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl class='col-lg-4' parentid='user_profile_content' tag='DIV' visibleinnertext='*{0} - {1}*' /&gt;&quot;, apptm_date, Start_Time)]" Guid="f664e186-a636-433c-ade7-83bf87a9117c" InformativeScreenshot="0dccf5b9fbe624d0313bd388b04aa742.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Appointments - Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                         </uix:NClick.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -302,7 +309,7 @@
                       </Sequence>
                     </TryCatch.Finally>
                   </TryCatch>
-                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="Delay_2">
+                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="622.4,60.8" sap2010:WorkflowViewState.IdRef="Delay_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -310,7 +317,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Delay>
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.4,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="622.4,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
                     <ui:CommentOut.Body>
                       <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,152.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
                         <sap:WorkflowViewStateService.ViewState>
@@ -489,7 +496,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:CommentOut>
-                  <If sap2010:Annotation.AnnotationText="If Appointment has to be canceled --&gt;  &quot;inside of 48 hrs&quot;" Condition="[cancelation_Window = &quot;inside of 48 hrs&quot;]" sap:VirtualizedContainerService.HintSize="486.4,2803.2" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If sap2010:Annotation.AnnotationText="If Appointment has to be canceled --&gt;  &quot;inside of 48 hrs&quot;" Condition="[cancelation_Window = &quot;inside of 48 hrs&quot;]" sap:VirtualizedContainerService.HintSize="622.4,3138.4" sap2010:WorkflowViewState.IdRef="If_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -498,13 +505,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484.8,1298.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="518.4,1278.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NSelectItem DisplayName="Select Item 'No Show'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,203.2" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="No Show - Full Price" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
+                        <uix:NSelectItem DisplayName="Select Item 'No Show'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484.8,203.2" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="No Show - Full Price" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
                           <uix:NSelectItem.Items>
                             <scg:List x:TypeArguments="x:String" Capacity="18">
                               <x:String>No Show - Full Price</x:String>
@@ -537,21 +544,22 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NSelectItem>
-                        <If Condition="[(apt_status=&quot;Abort&quot; Or apt_status=&quot;cancelation_failed&quot;)]" sap:VirtualizedContainerService.HintSize="451.2,1031.2" sap2010:WorkflowViewState.IdRef="If_3">
+                        <If sap2010:Annotation.AnnotationText="(apt_status=&quot;Abort&quot; Or apt_status=&quot;cancelation_failed&quot;)" Condition="[(apt_status=&quot;Abort&quot; Or apt_status=&quot;cancelation_failed&quot;)]" sap:VirtualizedContainerService.HintSize="484.8,1011.2" sap2010:WorkflowViewState.IdRef="If_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,356.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="483.2,331.2" sap2010:WorkflowViewState.IdRef="Sequence_32">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Canceled" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_4" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Canceled&quot;]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Canceled" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_4" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Canceled&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -584,25 +592,306 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <ui:LogMessage sap2010:Annotation.AnnotationText="Appointment has been canceled" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;Appointment has been canceled Successfully for the client: &quot;+email+&quot; and Cancellation Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Row no: &quot;+index.ToString]">
+                              <ui:LogMessage sap2010:Annotation.AnnotationText="Appointment has been canceled" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;Appointment has been canceled Successfully for the client: &quot;+email+&quot; and Cancellation Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Row no: &quot;+index.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:LogMessage>
+                              <Sequence sap2010:Annotation.AnnotationText="Updating status in jane appointment sheet as well" DisplayName="Jane_Appointment" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Reading...&#xA;Client Details Sheet &amp;&#xA;Appointment Details Sheet" ConnectionAccountName="Mehban_Org" ConnectionId="FolderItemId" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="518.4,1755.2" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_2" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
+                                  <ugas:GoogleSheetsApplicationScope.Body>
+                                    <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1381.6" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd2:DataTable" Name="DT_Jane_Appt" />
+                                          <Variable x:TypeArguments="sd2:DataTable" Name="Filter_DT_Jane_Appt" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Read Jane Appointment sheet" AuthScopesInvalid="False" DisplayName="Jane Appointments" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="ReadRange_2" IncludeHeaders="True" Result="[DT_Jane_Appt]" SheetName="Jane Appointments">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uga:ReadRange>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_25" Message="[jane_Date + &quot; &quot;+ apt_time +&quot; &quot;+email]" />
+                                        <ui:FilterDataTable DataTable="[DT_Jane_Appt]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="451.2,198.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[Filter_DT_Jane_Appt]" SelectColumnsMode="Remove">
+                                          <ui:FilterDataTable.Filters>
+                                            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Appointment Date"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[jane_Date]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Appointment Time"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[apt_time]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Client Email"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[email]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                            </scg:List>
+                                          </ui:FilterDataTable.Filters>
+                                          <ui:FilterDataTable.SelectColumns>
+                                            <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                              <x:Null />
+                                            </scg:List>
+                                          </ui:FilterDataTable.SelectColumns>
+                                        </ui:FilterDataTable>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_26" Message="[&quot;Filter row:&quot; +Filter_DT_Jane_Appt.RowCount.ToString]" />
+                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Filter_DT_Jane_Appt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="451.2,670.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                          <ui:ForEachRow.Body>
+                                            <ActivityAction x:TypeArguments="sd2:DataRow">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,493.6" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                                <Sequence.Variables>
+                                                  <Variable x:TypeArguments="x:String" Name="Jane_Row_no" />
+                                                </Sequence.Variables>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign sap2010:Annotation.AnnotationText="Row No" sap:VirtualizedContainerService.HintSize="416,209.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[Jane_Row_no]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[CurrentRow("Row Number").ToString]</InArgument>
+                                                  </Assign.Value>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Assign>
+                                                <uga:WriteCell ContinueOnError="{x:Null}" Request="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="[&quot;T&quot;+Jane_Row_no]" DisplayName="Write Cell" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="WriteCell_5" IsInsideBatchUpdateScope="False" SheetName="Jane Appointments" Value="Canceled" />
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:ForEachRow.Body>
+                                        </ui:ForEachRow>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ugas:GoogleSheetsApplicationScope.Body>
+                                  <ugas:GoogleSheetsApplicationScope.CredentialID>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugas:GoogleSheetsApplicationScope.CredentialID>
+                                  <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ugas:GoogleSheetsApplicationScope>
+                              </Sequence>
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,540.8" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="483.2,515.2" sap2010:WorkflowViewState.IdRef="Sequence_33">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Schedule" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_8" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Schedule&quot;]">
+                              <Sequence sap2010:Annotation.AnnotationText="Updating status in jane appointment sheet as well" DisplayName="Jane_Appointment" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Reading...&#xA;Client Details Sheet &amp;&#xA;Appointment Details Sheet" ConnectionAccountName="Mehban_Org" ConnectionId="FolderItemId" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="518.4,1506.4" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_3" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
+                                  <ugas:GoogleSheetsApplicationScope.Body>
+                                    <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1132.8" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd2:DataTable" Name="DT_Jane_Appt" />
+                                          <Variable x:TypeArguments="sd2:DataTable" Name="Filter_DT_Jane_Appt" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Read Jane Appointment sheet" AuthScopesInvalid="False" DisplayName="Jane Appointments" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="ReadRange_3" IncludeHeaders="True" Result="[DT_Jane_Appt]" SheetName="Jane Appointments">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uga:ReadRange>
+                                        <ui:FilterDataTable DataTable="[DT_Jane_Appt]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="451.2,198.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[Filter_DT_Jane_Appt]" SelectColumnsMode="Remove">
+                                          <ui:FilterDataTable.Filters>
+                                            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Appointment Date"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[jane_Date]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Appointment Time"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[apt_time]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Client Email"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[email]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                            </scg:List>
+                                          </ui:FilterDataTable.Filters>
+                                          <ui:FilterDataTable.SelectColumns>
+                                            <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                              <x:Null />
+                                            </scg:List>
+                                          </ui:FilterDataTable.SelectColumns>
+                                        </ui:FilterDataTable>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_27" Message="[&quot;Filter row:&quot; +Filter_DT_Jane_Appt.RowCount.ToString]" />
+                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Filter_DT_Jane_Appt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="451.2,600" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                          <ui:ForEachRow.Body>
+                                            <ActivityAction x:TypeArguments="sd2:DataRow">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,423.2" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                                <Sequence.Variables>
+                                                  <Variable x:TypeArguments="x:String" Name="Jane_Row_no" />
+                                                </Sequence.Variables>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign sap2010:Annotation.AnnotationText="Row No" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[Jane_Row_no]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[CurrentRow("Row Number").ToString]</InArgument>
+                                                  </Assign.Value>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Assign>
+                                                <uga:WriteCell ContinueOnError="{x:Null}" Request="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Colm T" AuthScopesInvalid="False" Cell="[&quot;T&quot;+Jane_Row_no]" DisplayName="Write Cell" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCell_7" IsInsideBatchUpdateScope="False" SheetName="Jane Appointments" Value="Booked">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uga:WriteCell>
+                                                <uga:WriteCell ContinueOnError="{x:Null}" Request="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Colm A" AuthScopesInvalid="False" Cell="[&quot;A&quot;+Jane_Row_no]" DisplayName="Write Cell" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCell_11" IsInsideBatchUpdateScope="False" SheetName="Jane Appointments" Value="[reschedule_date]">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uga:WriteCell>
+                                                <uga:WriteCell ContinueOnError="{x:Null}" Request="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Colm B" AuthScopesInvalid="False" Cell="[&quot;B&quot;+Jane_Row_no]" DisplayName="Write Cell" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,83.2" sap2010:WorkflowViewState.IdRef="WriteCell_8" IsInsideBatchUpdateScope="False" SheetName="Jane Appointments" Value="[reschedule_time]">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uga:WriteCell>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:ForEachRow.Body>
+                                        </ui:ForEachRow>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ugas:GoogleSheetsApplicationScope.Body>
+                                  <ugas:GoogleSheetsApplicationScope.CredentialID>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugas:GoogleSheetsApplicationScope.CredentialID>
+                                  <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ugas:GoogleSheetsApplicationScope>
+                              </Sequence>
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Schedule" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_8" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Schedule&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -635,7 +924,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="AppointmentDate = Reschedule Date" AuthScopesInvalid="False" Cell="[&quot;A&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_6" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_date]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="AppointmentDate = Reschedule Date" AuthScopesInvalid="False" Cell="[&quot;A&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_6" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_date]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -668,7 +957,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Time = Reschedule Time" AuthScopesInvalid="False" Cell="[&quot;B&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_7" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_time]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Time = Reschedule Time" AuthScopesInvalid="False" Cell="[&quot;B&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_7" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_time]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID4" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -701,10 +990,10 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <ui:LogMessage sap2010:Annotation.AnnotationText="Appointment has been canceled" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_14" Message="[&quot;Appointment has been Rescheduling Successfully for the client: &quot;+email+&quot; and Rescheduling Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Row no: &quot;+index.ToString]">
+                              <ui:LogMessage sap2010:Annotation.AnnotationText="Appointment has been canceled" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_14" Message="[&quot;Appointment has been Rescheduling Successfully for the client: &quot;+email+&quot; and Rescheduling Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Row no: &quot;+index.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   </scg:Dictionary>
@@ -716,13 +1005,13 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484.8,1340" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="518.4,1695.2" sap2010:WorkflowViewState.IdRef="Sequence_25">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Cancel/Delete'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Timeout="0" Version="V5">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Cancel/Delete'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484.8,60.8" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Timeout="0" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="1742, 930, 156, 42" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' aaname='Cancel/Delete ' innertext='Cancel/Delete ' /&gt;" Guid="e078dfbf-0c3a-4efc-80e8-4f24f1cc2168" InformativeScreenshot="71996b0083b5f48ca5c1e9a34d595759.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Appointments - Client #* - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NClick.Target>
@@ -733,7 +1022,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="'Cancel Appointment - No…Change'" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click " HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Timeout="10" Version="V5">
+                        <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="'Cancel Appointment - No…Change'" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click " HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484.8,92" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Timeout="10" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="1596, 900, 256, 50" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='LI' data-e2e-id='cancel_appointment_with_notification' /&gt;&lt;webctrl tag='DIV' innertext='Cancel Appointment - No Charge' /&gt;" Guid="9e842a77-07e7-469c-927a-633289c74cae" InformativeScreenshot="60f183f2bc3fa491732a726e32c1b1ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Appointments - Client #* - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NClick.Target>
@@ -745,7 +1034,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NCheckState sap2010:Annotation.AnnotationText="Cancelation Reason : Open Modal" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
+                        <uix:NCheckState sap2010:Annotation.AnnotationText="Cancelation Reason : Open Modal" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="484.8,92" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="d9910c47-47e6-4541-87e3-e3edc7fcadd0" Version="V5">
                           <uix:NCheckState.IfExists>
                             <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,208" sap2010:WorkflowViewState.IdRef="Sequence_28">
                               <sap:WorkflowViewStateService.ViewState>
@@ -815,7 +1104,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
-                        <If Condition="[(apt_status=&quot;Abort&quot; Or apt_status=&quot;cancelation_failed&quot;)]" sap:VirtualizedContainerService.HintSize="451.2,1031.2" sap2010:WorkflowViewState.IdRef="If_4">
+                        <If Condition="[(apt_status=&quot;Abort&quot; Or apt_status=&quot;cancelation_failed&quot;)]" sap:VirtualizedContainerService.HintSize="484.8,1386.4" sap2010:WorkflowViewState.IdRef="If_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -823,13 +1112,13 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,356.8" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="483.2,737.6" sap2010:WorkflowViewState.IdRef="Sequence_34">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Canceled" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_10" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Canceled&quot;]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Canceled" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,380.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_10" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Canceled&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID5" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -856,13 +1145,13 @@
                                 </uga:WriteCellConnections.Item>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <ui:LogMessage sap2010:Annotation.AnnotationText="Appointment has been canceled" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_16" Message="[&quot;Appointment has been canceled Successfully for the client: &quot;+email+&quot; and Cancellation Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Row no: &quot;+index.ToString]">
+                              <ui:LogMessage sap2010:Annotation.AnnotationText="Appointment has been canceled" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,209.6" sap2010:WorkflowViewState.IdRef="LogMessage_16" Message="[&quot;Appointment has been canceled Successfully for the client: &quot;+email+&quot; and Cancellation Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Row no: &quot;+index.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -871,16 +1160,297 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:LogMessage>
+                              <Sequence sap2010:Annotation.AnnotationText="Updating status in jane appointment sheet as well" DisplayName="Jane_Appointment" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Reading...&#xA;Client Details Sheet &amp;&#xA;Appointment Details Sheet" ConnectionAccountName="Mehban_Org" ConnectionId="FolderItemId" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="518.4,1755.2" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
+                                  <ugas:GoogleSheetsApplicationScope.Body>
+                                    <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1381.6" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd2:DataTable" Name="DT_Jane_Appt" />
+                                          <Variable x:TypeArguments="sd2:DataTable" Name="Filter_DT_Jane_Appt" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Read Jane Appointment sheet" AuthScopesInvalid="False" DisplayName="Jane Appointments" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="ReadRange_1" IncludeHeaders="True" Result="[DT_Jane_Appt]" SheetName="Jane Appointments">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uga:ReadRange>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_24" Message="[jane_Date + &quot; &quot;+ apt_time +&quot; &quot;+email]" />
+                                        <ui:FilterDataTable DataTable="[DT_Jane_Appt]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="451.2,198.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Filter_DT_Jane_Appt]" SelectColumnsMode="Remove">
+                                          <ui:FilterDataTable.Filters>
+                                            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Appointment Date"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[jane_Date]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Appointment Time"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[apt_time]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Client Email"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[email]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                            </scg:List>
+                                          </ui:FilterDataTable.Filters>
+                                          <ui:FilterDataTable.SelectColumns>
+                                            <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                              <x:Null />
+                                            </scg:List>
+                                          </ui:FilterDataTable.SelectColumns>
+                                        </ui:FilterDataTable>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_23" Message="[&quot;Filter row:&quot; +Filter_DT_Jane_Appt.RowCount.ToString]" />
+                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Filter_DT_Jane_Appt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="451.2,670.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                                          <ui:ForEachRow.Body>
+                                            <ActivityAction x:TypeArguments="sd2:DataRow">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,493.6" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                                <Sequence.Variables>
+                                                  <Variable x:TypeArguments="x:String" Name="Jane_Row_no" />
+                                                </Sequence.Variables>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign sap2010:Annotation.AnnotationText="Row No" sap:VirtualizedContainerService.HintSize="416,209.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[Jane_Row_no]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[CurrentRow("Row Number").ToString]</InArgument>
+                                                  </Assign.Value>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Assign>
+                                                <uga:WriteCell ContinueOnError="{x:Null}" Request="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" Cell="[&quot;T&quot;+Jane_Row_no]" DisplayName="Write Cell" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="WriteCell_4" IsInsideBatchUpdateScope="False" SheetName="Jane Appointments" Value="Canceled" />
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:ForEachRow.Body>
+                                        </ui:ForEachRow>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ugas:GoogleSheetsApplicationScope.Body>
+                                  <ugas:GoogleSheetsApplicationScope.CredentialID>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugas:GoogleSheetsApplicationScope.CredentialID>
+                                  <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ugas:GoogleSheetsApplicationScope>
+                              </Sequence>
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,540.8" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="483.2,515.2" sap2010:WorkflowViewState.IdRef="Sequence_35">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Schedule" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_11" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Schedule&quot;]">
+                              <Sequence sap2010:Annotation.AnnotationText="Updating status in jane appointment sheet as well" DisplayName="Jane_Appointment" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Reading...&#xA;Client Details Sheet &amp;&#xA;Appointment Details Sheet" ConnectionAccountName="Mehban_Org" ConnectionId="FolderItemId" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="518.4,2010.4" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_4" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
+                                  <ugas:GoogleSheetsApplicationScope.Body>
+                                    <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1636.8" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="sd2:DataTable" Name="DT_Jane_Appt" />
+                                          <Variable x:TypeArguments="sd2:DataTable" Name="Filter_DT_Jane_Appt" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Read Jane Appointment sheet" AuthScopesInvalid="False" DisplayName="Jane Appointments" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="ReadRange_4" IncludeHeaders="True" Result="[DT_Jane_Appt]" SheetName="Jane Appointments">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uga:ReadRange>
+                                        <ui:FilterDataTable DataTable="[DT_Jane_Appt]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="451.2,198.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[Filter_DT_Jane_Appt]" SelectColumnsMode="Remove">
+                                          <ui:FilterDataTable.Filters>
+                                            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Appointment Date"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[jane_Date]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Appointment Time"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[apt_time]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                                                <ui:FilterOperationArgument.Column>
+                                                  <InArgument x:TypeArguments="x:String">["Client Email"]</InArgument>
+                                                </ui:FilterOperationArgument.Column>
+                                                <ui:FilterOperationArgument.Operand>
+                                                  <InArgument x:TypeArguments="x:String">[email]</InArgument>
+                                                </ui:FilterOperationArgument.Operand>
+                                              </ui:FilterOperationArgument>
+                                            </scg:List>
+                                          </ui:FilterDataTable.Filters>
+                                          <ui:FilterDataTable.SelectColumns>
+                                            <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                              <x:Null />
+                                            </scg:List>
+                                          </ui:FilterDataTable.SelectColumns>
+                                        </ui:FilterDataTable>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="451.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_29" Message="[&quot;Filter row:&quot; +Filter_DT_Jane_Appt.RowCount.ToString]" />
+                                        <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Filter_DT_Jane_Appt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="451.2,1104" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                                          <ui:ForEachRow.Body>
+                                            <ActivityAction x:TypeArguments="sd2:DataRow">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="sd2:DataRow" Name="CurrentRow" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,927.2" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                <Sequence.Variables>
+                                                  <Variable x:TypeArguments="x:String" Name="Jane_Row_no" />
+                                                </Sequence.Variables>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign sap2010:Annotation.AnnotationText="Row No" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[Jane_Row_no]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[CurrentRow("Row Number").ToString]</InArgument>
+                                                  </Assign.Value>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Assign>
+                                                <uga:WriteCell ContinueOnError="{x:Null}" Request="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Colm T" AuthScopesInvalid="False" Cell="[&quot;T&quot;+Jane_Row_no]" DisplayName="Write Cell" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,260" sap2010:WorkflowViewState.IdRef="WriteCell_9" IsInsideBatchUpdateScope="False" SheetName="Jane Appointments" Value="Booked">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uga:WriteCell>
+                                                <uga:WriteCell ContinueOnError="{x:Null}" Request="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Colm A" AuthScopesInvalid="False" Cell="[&quot;A&quot;+Jane_Row_no]" DisplayName="Write Cell" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,260" sap2010:WorkflowViewState.IdRef="WriteCell_12" IsInsideBatchUpdateScope="False" SheetName="Jane Appointments" Value="[reschedule_date]">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uga:WriteCell>
+                                                <uga:WriteCell ContinueOnError="{x:Null}" Request="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Colm B" AuthScopesInvalid="False" Cell="[&quot;B&quot;+Jane_Row_no]" DisplayName="Write Cell" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,251.2" sap2010:WorkflowViewState.IdRef="WriteCell_10" IsInsideBatchUpdateScope="False" SheetName="Jane Appointments" Value="[reschedule_time]">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uga:WriteCell>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:ForEachRow.Body>
+                                        </ui:ForEachRow>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ugas:GoogleSheetsApplicationScope.Body>
+                                  <ugas:GoogleSheetsApplicationScope.CredentialID>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugas:GoogleSheetsApplicationScope.CredentialID>
+                                  <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ugas:GoogleSheetsApplicationScope>
+                              </Sequence>
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Schedule" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_11" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Schedule&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID6" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -913,7 +1483,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="AppointmentDate = Reschedule Date" AuthScopesInvalid="False" Cell="[&quot;A&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_12" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_date]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="AppointmentDate = Reschedule Date" AuthScopesInvalid="False" Cell="[&quot;A&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_12" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_date]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID7" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -946,7 +1516,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Time = Reschedule Time" AuthScopesInvalid="False" Cell="[&quot;B&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_13" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_time]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Time = Reschedule Time" AuthScopesInvalid="False" Cell="[&quot;B&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_13" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[reschedule_time]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID8" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -979,10 +1549,10 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uga:WriteCellConnections>
-                              <ui:LogMessage sap2010:Annotation.AnnotationText="Appointment has been canceled" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_17" Message="[&quot;Appointment has been Rescheduling Successfully for the client: &quot;+email+&quot; and Rescheduling Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Row no: &quot;+index.ToString]">
+                              <ui:LogMessage sap2010:Annotation.AnnotationText="Appointment has been canceled" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_17" Message="[&quot;Appointment date and time has been replaced Successfully for the client: &quot;+email+&quot; and Rescheduling Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Row no: &quot;+index.ToString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   </scg:Dictionary>
@@ -1002,13 +1572,13 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,116" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="656,116" sap2010:WorkflowViewState.IdRef="Sequence_12">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[(apt_status=&quot;Abort&quot; Or apt_status=&quot;cancelation_failed&quot;)]" sap:VirtualizedContainerService.HintSize="486.4,52" sap2010:WorkflowViewState.IdRef="If_5">
+                      <If Condition="[(apt_status=&quot;Abort&quot; Or apt_status=&quot;cancelation_failed&quot;)]" sap:VirtualizedContainerService.HintSize="622.4,52" sap2010:WorkflowViewState.IdRef="If_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1016,13 +1586,13 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,239.2" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,356.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Cancelation Failed" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_2" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Cancelation Failed&quot;]">
+                            <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Cancelation Failed" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_2" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Cancelation Failed&quot;]">
                               <uga:WriteCellConnections.FileIdBackup>
                                 <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID9" StoredValue="UrlOrId">
                                   <usau:BackupSlot.BackupValues>
@@ -1055,10 +1625,10 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uga:WriteCellConnections>
-                            <ui:LogMessage sap2010:Annotation.AnnotationText="Cancelation Failed Reason" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_19" Message="[&quot;Cancelation Failed for the client: &quot;+email+&quot; and Cancellation Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Failed Row no: &quot;+index.ToString+Environment.NewLine + &quot; Cancelation Failed Reason: &quot;+Exception.Message]">
+                            <ui:LogMessage sap2010:Annotation.AnnotationText="Cancelation Failed Reason" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_19" Message="[&quot;Cancelation Failed for the client: &quot;+email+&quot; and Cancellation Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Failed Row no: &quot;+index.ToString+Environment.NewLine + &quot; Cancelation Failed Reason: &quot;+Exception.Message]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 </scg:Dictionary>
@@ -1067,13 +1637,13 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,252.8" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="449.6,659.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Rescheduling Failed" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,105.6" sap2010:WorkflowViewState.IdRef="WriteCellConnections_17" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Rescheduling Failed&quot;]">
+                            <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Appointment Status updated = Rescheduling Failed" AuthScopesInvalid="False" Cell="[&quot;S&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Appointment  Status Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,394.4" sap2010:WorkflowViewState.IdRef="WriteCellConnections_17" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Rescheduling Failed&quot;]">
                               <uga:WriteCellConnections.FileIdBackup>
                                 <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID10" StoredValue="UrlOrId">
                                   <usau:BackupSlot.BackupValues>
@@ -1100,16 +1670,16 @@
                               </uga:WriteCellConnections.Item>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uga:WriteCellConnections>
-                            <ui:LogMessage sap2010:Annotation.AnnotationText="Rescheduling Failed Reason" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,83.2" sap2010:WorkflowViewState.IdRef="LogMessage_22" Message="[&quot;Rescheduling Failed for the client: &quot;+email+&quot; and Cancellation Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Failed Row no: &quot;+index.ToString+Environment.NewLine + &quot; Cancelation Failed Reason: &quot;+Exception.Message]">
+                            <ui:LogMessage sap2010:Annotation.AnnotationText="Rescheduling Failed Reason" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_22" Message="[&quot;Rescheduling Failed for the client: &quot;+email+&quot; and Cancellation Date_Time was: &quot;+ appointment_date+&quot; &quot;+Time+ &quot; at &quot;+Environment.NewLine + &quot;Failed Row no: &quot;+index.ToString+Environment.NewLine + &quot; Cancelation Failed Reason: &quot;+Exception.Message]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 </scg:Dictionary>
@@ -1123,7 +1693,7 @@
                 </Catch>
               </TryCatch.Catches>
               <TryCatch.Finally>
-                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="520,94.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="656,94.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
