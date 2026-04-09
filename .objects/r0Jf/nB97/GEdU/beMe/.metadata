@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Insurance InfoClaim Sel…",
+  "Type": "Element",
+  "Id": "beMeEF-6uk6dl4_S35i9zw",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/beMeEF-6uk6dl4_S35i9zw",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/GEdUr6xfLEG0nFhAHkwPBQ",
+  "Created": "2026-04-06T18:12:44.5923743Z",
+  "Updated": "2026-04-06T18:12:44.5923743Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

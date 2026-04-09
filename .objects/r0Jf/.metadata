@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Schedule - ShiftGrit - Jane(3)",
+  "Type": "App",
+  "Id": "r0Jfhgg550uQ8B7KnwbmDg",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/r0Jfhgg550uQ8B7KnwbmDg",
+  "Created": "2026-04-06T18:12:40.8995999Z",
+  "Updated": "2026-04-06T18:12:40.8995999Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

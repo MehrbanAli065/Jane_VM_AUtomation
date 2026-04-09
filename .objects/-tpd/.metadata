@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Today - ShiftGrit - Jane(3)(1)",
+  "Type": "App",
+  "Id": "-tpdMJMVi06MKv7NLzxKKA",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/-tpdMJMVi06MKv7NLzxKKA",
+  "Created": "2026-04-08T14:40:20.121131Z",
+  "Updated": "2026-04-08T14:40:20.121131Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

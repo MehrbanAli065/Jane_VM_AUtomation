@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Packages & Memberships",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "rqyTuB0itEm5tB_TKKcZ_Q",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/rqyTuB0itEm5tB_TKKcZ_Q",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/GEdUr6xfLEG0nFhAHkwPBQ",
+  "Created": "2026-04-06T18:17:16.201483Z",
+  "Updated": "2026-04-06T18:17:16.201483Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
