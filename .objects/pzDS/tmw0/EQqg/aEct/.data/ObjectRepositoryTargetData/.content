@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="37oy0sDcJUGKcRQAjxrqpQ" Reference="JvcRkLFENEOphCeQ2p439w/aEct-C17ikSVEhJbU6mcag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://shiftgritab.janeapp.com/admin#patients" DesignTimeRectangle="23, 266, 278, 292" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='user-list' tag='UL' /&gt;" Guid="a9463011-685f-44da-9591-93fb931e4728" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Clients - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f344ed946c6c79e1709e03a6887170c3.jpg" xmlns="">0ef98gz5U70mFOxZpPjBmlQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractDataGeneric</x:String>
+    <x:Null x:Key="NextLinkTarget" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -42,6 +42,78 @@
         "hash": "NExtractDataGeneric`1_2|DataTable|Ghx7B0xVJtichchhVeG4apthku6gjAJEA9PMyNWrA",
         "assemblyName": "Studio.Generated.TypedDataTable2"
       }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 3,
+        "idRef": "NExtractDataGeneric`1_1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|Ngr2tj4HSqhdy76br5SfmOCc0UpNfksjvskohmTUI",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "match_name",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "match_url",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable3",
+        "hash": "NExtractDataGeneric`1_1|DataTable|QZovQZ7y6OTDHDoZSeb3vI4F9jCwfBAKN1IUnRA39G0",
+        "assemblyName": "Studio.Generated.TypedDataTable3"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 4,
+        "idRef": "NExtractDataGeneric`1_1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|Ngr2tj4HSqhdy76br5SfmOCc0UpNfksjvskohmTUI",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "match_name",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "match_url",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable4",
+        "hash": "NExtractDataGeneric`1_1|DataTable|QZovQZ7y6OTDHDoZSeb3vI4F9jCwfBAKN1IUnRA39G0",
+        "assemblyName": "Studio.Generated.TypedDataTable4"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 5,
+        "idRef": "NExtractDataGeneric`1_1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|ZzZmUgzi0VBStqNKWlKA4j7n0lsyU8Tb7Mgbs9K8jY4",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Status",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Recurring_Date_R",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable5",
+        "hash": "NExtractDataGeneric`1_1|DataTable|pzLQQ9lz45xXpX31uNKHP5lnLuMsH1SGnfaf8TAxQ",
+        "assemblyName": "Studio.Generated.TypedDataTable5"
+      }
     }
   ]
 }

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Search and Add Client if not exist(1)",
+  "Type": "Screen",
+  "Id": "EQqghCK6tE-Duw0PODBsYA",
+  "Reference": "JvcRkLFENEOphCeQ2p439w/EQqghCK6tE-Duw0PODBsYA",
+  "ParentRef": "JvcRkLFENEOphCeQ2p439w/tmw0MYLLQkK4SeP3mopIGA",
+  "Created": "2026-04-16T06:46:19.412111Z",
+  "Updated": "2026-04-16T06:46:19.412111Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

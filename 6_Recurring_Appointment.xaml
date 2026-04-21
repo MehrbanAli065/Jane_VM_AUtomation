@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_6_Recurring_Appointment" this:_6_Recurring_Appointment.target_day="6" this:_6_Recurring_Appointment.recurringDate="2026-05-06" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_6_Recurring_Appointment" this:_6_Recurring_Appointment.target_day="6" this:_6_Recurring_Appointment.recurringDate="2026-05-06" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd3="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable5" xmlns:this="clr-namespace:" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="appointment_time" Type="InArgument(x:String)" />
     <x:Property Name="recurring_flag" Type="InArgument(x:String)" />
@@ -172,27 +172,34 @@
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable5</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable3</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_6_Recurring_Appointment" sap:VirtualizedContainerService.HintSize="886,9543.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_6_Recurring_Appointment" sap:VirtualizedContainerService.HintSize="914.8000000000001,1832.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Recurring_Appointment" sap:VirtualizedContainerService.HintSize="662.4,9520" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Recurring_Appointment" sap:VirtualizedContainerService.HintSize="520,1810.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Today - ShiftGrit - Jane(3)(1)(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="628.8,9436.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Today - ShiftGrit - Jane(3)(1)(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486.4,1727.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="627.2,9243.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484.8,1533.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="staff_url" />
                 <Variable x:TypeArguments="x:String" Name="Staff_ID" />
@@ -204,7 +211,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Staff' Tab" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="593.6,60.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Staff' Tab" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="14416178-d2ff-4f8c-93ac-d20b6c0d5ec1" DesignTimeRectangle="317, 225, 65, 63" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Staff' parentid='app_nav_left' tag='A' href='/admin#staff' /&gt;" Guid="6810fe9d-4d34-4a8b-9239-9513e93a27a2" InformativeScreenshot="8f9e85a07ba413a5e49f4001d5eb34ba.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
@@ -215,7 +222,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <Sequence DisplayName="Getting Staff Id" sap:VirtualizedContainerService.HintSize="593.6,60.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence DisplayName="Getting Staff Id" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -284,7 +291,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NGoToUrl>
               </Sequence>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="593.6,60.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -312,17 +319,17 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:MultipleAssign>
-              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="593.6,60.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-              <TryCatch sap2010:Annotation.AnnotationText="Click on Appointment which u want to Recurring" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="593.6,965.6" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="451.2,60.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+              <TryCatch sap2010:Annotation.AnnotationText="Click on Appointment which u want to Recurring" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="451.2,92" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <TryCatch.Try>
-                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="449.6,405.6" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="449.6,523.2" sap2010:WorkflowViewState.IdRef="Sequence_31">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -340,10 +347,10 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NClick>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="LogMessage_36" Message="[&quot;Appointment has been clicked&quot;]">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_36" Message="[&quot;Appointment has been clicked&quot;]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -410,10 +417,10 @@
                   </Sequence>
                 </TryCatch.Finally>
               </TryCatch>
-              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="593.6,126.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
-              <uix:NCheckState sap2010:Annotation.AnnotationText="Click An arrow &gt;&gt;  for recurring appointment panel to be appear" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="593.6,7844" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+              <Delay Duration="00:00:07" sap:VirtualizedContainerService.HintSize="451.2,126.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
+              <uix:NCheckState sap2010:Annotation.AnnotationText="Click An arrow &gt;&gt;  for recurring appointment panel to be appear" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="451.2,1008" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                 <uix:NCheckState.IfExists>
-                  <TryCatch sap:VirtualizedContainerService.HintSize="592,6836" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                  <TryCatch sap:VirtualizedContainerService.HintSize="691.2,9058.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -421,13 +428,19 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <TryCatch.Try>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="590.4,5950.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="689.6,8172.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="556.8,1152" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="656,1152" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
                             <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Book Recurring Appointment" ClickType="Single" ContinueOnError="False" DisplayName="Click: Arrow" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,192.8" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                               <uix:NClick.Target>
@@ -475,17 +488,17 @@
                             </Sequence>
                           </TryCatch.Finally>
                         </TryCatch>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556.8,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_35" Message="[&quot;Arrow clicked&quot;]" />
-                        <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="556.8,126.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
-                        <uix:NCheckState sap2010:Annotation.AnnotationText="Fill the recurring Detail" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="556.8,4429.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="656,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_35" Message="[&quot;Arrow clicked&quot;]" />
+                        <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="656,126.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                        <uix:NCheckState sap2010:Annotation.AnnotationText="Fill the recurring Detail" DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="656,6652" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="553.6,3412.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="654.4,5635.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Looping Recurring Days" sap:VirtualizedContainerService.HintSize="520,60.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                              <Sequence DisplayName="Looping Recurring Days" sap:VirtualizedContainerService.HintSize="620.8,60.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -552,7 +565,7 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:ForEach>
                               </Sequence>
-                              <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="DatePicker" ClickType="Single" DisplayName="Click:" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,92" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                              <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="DatePicker" ClickType="Single" DisplayName="Click:" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="620.8,92" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="12f2f33c-d5b8-445b-a41f-57bca3fcf100" DesignTimeRectangle="539, 618, 654, 42" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='DIV' data-testid='date-picker-input' idx='2' /&gt;&lt;webctrl name='end_at' tag='INPUT' /&gt;" Guid="0c09c371-f6e2-4776-9de3-d76ed92c2157" InformativeScreenshot="a4561ed86967ba0109e234525dc3bfdd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NClick.Target>
@@ -564,15 +577,15 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NClick>
-                              <uix:NCheckState sap2010:Annotation.AnnotationText="Select Recurring Date From Date Picker " DisplayName="Check App State: Date Picker" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="520,3196" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                              <uix:NCheckState sap2010:Annotation.AnnotationText="Select Recurring Date From Date Picker " DisplayName="Check App State: Date Picker" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="620.8,5418.4" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                                 <uix:NCheckState.IfExists>
-                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="518.4,2179.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="619.2,4401.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NSelectItem DisplayName="Select Item: Target Month" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484.8,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[target_Month]" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                                    <uix:NSelectItem DisplayName="Select Item: Target Month" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="585.6,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[target_Month]" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                                       <uix:NSelectItem.Items>
                                         <scg:List x:TypeArguments="x:String" Capacity="12">
                                           <x:String>January</x:String>
@@ -599,7 +612,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NSelectItem>
-                                    <uix:NSelectItem DisplayName="Select Item: Target Year" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484.8,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[target_year]" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                                    <uix:NSelectItem DisplayName="Select Item: Target Year" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="585.6,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[target_year]" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                                       <uix:NSelectItem.Items>
                                         <scg:List x:TypeArguments="x:String" Capacity="2">
                                           <x:String>2026</x:String>
@@ -616,7 +629,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NSelectItem>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click: Target Day" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484.8,60.8" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click: Target Day" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="585.6,60.8" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" CVScreenId="202564aa-540d-497b-8bc2-77a06f8060b9" DesignTimeRectangle="687, 463, 37, 36" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aria-label='*' aria-role='button' tag='DIV' visibleinnertext='{0}' /&gt;&quot;, target_day)]" Guid="ea95ac52-f29b-4875-87b6-621e2f7c9c83" InformativeScreenshot="55b803e0bd71c409047a44c12bb824bd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                                       </uix:NClick.Target>
@@ -627,7 +640,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NClick>
-                                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="484.8,60.8" sap2010:WorkflowViewState.IdRef="Delay_2">
+                                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="585.6,60.8" sap2010:WorkflowViewState.IdRef="Delay_2">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -635,7 +648,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Delay>
-                                    <uix:NSelectItem ContinueOnError="False" DisplayName="Select Item: Recurring Frequency" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484.8,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[recurring_freq]" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                                    <uix:NSelectItem ContinueOnError="False" DisplayName="Select Item: Recurring Frequency" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="585.6,60.8" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[recurring_freq]" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                                       <uix:NSelectItem.Items>
                                         <scg:List x:TypeArguments="x:String" Capacity="7">
                                           <x:String>Every Week</x:String>
@@ -657,28 +670,268 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NSelectItem>
-                                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="484.8,126.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                                    <uix:NCheckState sap2010:Annotation.AnnotationText="check if &quot;Book * Appintments&quot;  Button available " DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="484.8,1684.8" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="585.6,126.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                    <uix:NCheckState sap2010:Annotation.AnnotationText="check if &quot;Book * Appintments&quot;  Button available " DisplayName="Check App State:" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="585.6,3907.2" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                                       <uix:NCheckState.IfExists>
-                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="483.2,515.2" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="584,3026.4" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <TryCatch sap2010:Annotation.AnnotationText="Appointment storing logic" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="550.4,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,139.2" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <TryCatch sap2010:Annotation.AnnotationText="Appointment storing logic" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="416,79.2" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <TryCatch.Try>
+                                                    <Sequence sap2010:Annotation.AnnotationText="Fetching All recurring Appointments and store back into sheet" DisplayName="All Recurring Appointments" sap:VirtualizedContainerService.HintSize="449.6,656.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                      <Sequence.Variables>
+                                                        <Variable x:TypeArguments="sd:DataTable" Name="dt_Duplicate_Row" />
+                                                        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                                      </Sequence.Variables>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ui:BuildDataTable sap2010:Annotation.AnnotationText="Duplicate Rows for recurring appointments" DataTable="[dt_Duplicate_Row]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_Time&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Reschedule_x0020_Appointment_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Reschedule_x0020_Appointment_x0020_Time&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Session_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Session_x0020_Location&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;_x0034_8hr_x0020_Window&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Clinician_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Location&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Notes_x0020_for_x0020_Clinician&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Hold_x0020_24h&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_Appointment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_Days&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_End_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_Frequency&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Schedule_x0020_At&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Created_x0020_At&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Call_x0020_Summary&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Transcript&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Call_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Freshdesk_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Freshdesk_x0020_Ticket_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Row_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Payment_x0020_Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_Time_x0020_bracket&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;First_x0020_Message_x0020_Timestamp&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;SMS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </ui:BuildDataTable>
+                                                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data 'UL'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Recurring_Date_R'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,146.4" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                                                        <uix:NExtractData.Target>
+                                                          <uix:TargetAnchorable BrowserURL="https://shiftgritab.janeapp.com/admin#schedule/staff/8/2025-12-28/2026-01-03" DesignTimeRectangle="514, 346, 1371, 614" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='pane-right-extended' tag='UL' /&gt;" Guid="55ff45bb-1ccd-4a9c-8d3b-eb20c76cb467" InformativeScreenshot="3cd0ea8a0250d0e76c4b07aa8ff3e82f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                                        </uix:NExtractData.Target>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </uix:NExtractData>
+                                                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="All recurring appointments" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                                                        <ui:ForEachRow.Body>
+                                                          <ActivityAction x:TypeArguments="sd:DataRow">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                                            </ActivityAction.Argument>
+                                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,524" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                                              <Sequence.Variables>
+                                                                <Variable x:TypeArguments="x:String" Name="Fecthed_Recurring_Date" />
+                                                              </Sequence.Variables>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,184" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                                                <ui:MultipleAssign.AssignOperations>
+                                                                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                                                      <ui:AssignOperation.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[Fecthed_Recurring_Date]</OutArgument>
+                                                                      </ui:AssignOperation.To>
+                                                                      <ui:AssignOperation.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
+                                                                      </ui:AssignOperation.Value>
+                                                                    </ui:AssignOperation>
+                                                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                                                      <ui:AssignOperation.To>
+                                                                        <OutArgument x:TypeArguments="x:String">[Fecthed_Recurring_Date]</OutArgument>
+                                                                      </ui:AssignOperation.To>
+                                                                      <ui:AssignOperation.Value>
+                                                                        <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(Fecthed_Recurring_Date, "dddd MMMM d, yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd")]</InArgument>
+                                                                      </ui:AssignOperation.Value>
+                                                                    </ui:AssignOperation>
+                                                                  </scg:List>
+                                                                </ui:MultipleAssign.AssignOperations>
+                                                              </ui:MultipleAssign>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,60.8" sap2010:WorkflowViewState.IdRef="LogMessage_15" Message="[Fecthed_Recurring_Date]">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </ui:LogMessage>
+                                                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Fecthed_Recurring_Date, c_1, c_2, c_3, c_4, c_5, c_6, c_7, c_8, c_9, c_10, c_11, c_12, c_13, c_14, c_15, c_16, c_17, c_18, c_19, c_20, c_21, c_22, c_23, c_24,c_25,c_26,c_27,c_28,c_29,c_30}]" DataTable="[dt_Duplicate_Row]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="478.4,215.2" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </ui:AddDataRow>
+                                                            </Sequence>
+                                                          </ActivityAction>
+                                                        </ui:ForEachRow.Body>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </ui:ForEachRow>
+                                                      <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Read and write the data in sheet " Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
+                                                        <ugas:GoogleSheetsApplicationScope.Body>
+                                                          <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+                                                            <ActivityAction.Argument>
+                                                              <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+                                                            </ActivityAction.Argument>
+                                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1165.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                              <Sequence.Variables>
+                                                                <Variable x:TypeArguments="sd:DataTable" Name="dt_test_sheet" />
+                                                                <Variable x:TypeArguments="x:Int32" Name="lastRow" />
+                                                              </Sequence.Variables>
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                              <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Reading: Client Appointment Sheet" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,280.8" sap2010:WorkflowViewState.IdRef="ReadRange_1" IncludeHeaders="False" Result="[dt_test_sheet]" SheetName="Client Appointments">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uga:ReadRange>
+                                                              <Assign sap2010:Annotation.AnnotationText="last row of  a sheet so we can add data back to the sheeet" sap:VirtualizedContainerService.HintSize="416,223.2" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="x:Int32">[lastRow]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="x:Int32">[dt_test_sheet.Rows.Count+1]</InArgument>
+                                                                </Assign.Value>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </Assign>
+                                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_29" Message="[&quot;DT_ROWS: &quot; + dt_test_sheet.Rows.Count.ToString() + &quot; last row no:&quot; + lastRow.ToString()]" />
+                                                              <Assign sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                                                <Assign.To>
+                                                                  <OutArgument x:TypeArguments="sd:DataTable">[dt_Duplicate_Row]</OutArgument>
+                                                                </Assign.To>
+                                                                <Assign.Value>
+                                                                  <InArgument x:TypeArguments="sd:DataTable">[dt_Duplicate_Row.AsEnumerable().Skip(1).CopyToDataTable()]</InArgument>
+                                                                </Assign.Value>
+                                                              </Assign>
+                                                              <uga:WriteRange ContinueOnError="{x:Null}" Request="{x:Null}" Result="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DataTable="[dt_Duplicate_Row]" DisplayName="Write Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="WriteRange_1" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="Client Appointments" StartingCell="[&quot;A&quot;+lastRow.ToString]">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                              </uga:WriteRange>
+                                                            </Sequence>
+                                                          </ActivityAction>
+                                                        </ugas:GoogleSheetsApplicationScope.Body>
+                                                        <ugas:GoogleSheetsApplicationScope.CredentialID>
+                                                          <InArgument x:TypeArguments="x:String">
+                                                            <Literal x:TypeArguments="x:String" Value="" />
+                                                          </InArgument>
+                                                        </ugas:GoogleSheetsApplicationScope.CredentialID>
+                                                        <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                                          <InArgument x:TypeArguments="x:String">
+                                                            <Literal x:TypeArguments="x:String" Value="" />
+                                                          </InArgument>
+                                                        </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </ugas:GoogleSheetsApplicationScope>
+                                                      <ui:ClearDataTable sap2010:Annotation.AnnotationText="Clear dt_Duplicate_Row" DataTable="[dt_Duplicate_Row]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="ClearDataTable_1">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </ui:ClearDataTable>
+                                                    </Sequence>
+                                                  </TryCatch.Try>
+                                                  <TryCatch.Catches>
+                                                    <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                                                      <ActivityAction x:TypeArguments="s:Exception">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                        </ActivityAction.Argument>
+                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,233.6" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[&quot;Fetched Recurring Appointment/ Storing in Sheet Failed&quot; + Environment.NewLine+ &quot;Failed: Reason: &quot;+Exception.Message]" />
+                                                        </Sequence>
+                                                      </ActivityAction>
+                                                    </Catch>
+                                                  </TryCatch.Catches>
+                                                  <TryCatch.Finally>
+                                                    <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </Sequence>
+                                                  </TryCatch.Finally>
+                                                </TryCatch>
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:CommentOut>
+                                          <TryCatch sap2010:Annotation.AnnotationText="Appointment storing logic" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="550.4,2542.4" sap2010:WorkflowViewState.IdRef="TryCatch_13">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <TryCatch.Try>
-                                              <Sequence sap2010:Annotation.AnnotationText="Fetching All recurring Appointments and store back into sheet" DisplayName="All Recurring Appointments" sap:VirtualizedContainerService.HintSize="449.6,656.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                              <Sequence sap2010:Annotation.AnnotationText="Fetching All recurring Appointments and store back into sheet" DisplayName="All Recurring Appointments" sap:VirtualizedContainerService.HintSize="548.8,2001.6" sap2010:WorkflowViewState.IdRef="Sequence_75">
                                                 <Sequence.Variables>
                                                   <Variable x:TypeArguments="sd:DataTable" Name="dt_Duplicate_Row" />
                                                   <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                                                  <Variable x:TypeArguments="sd:DataTable" Name="DT_Filter_ExtractDataTable" />
                                                 </Sequence.Variables>
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -687,97 +940,166 @@
                                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:BuildDataTable sap2010:Annotation.AnnotationText="Duplicate Rows for recurring appointments" DataTable="[dt_Duplicate_Row]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_Time&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Reschedule_x0020_Appointment_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Reschedule_x0020_Appointment_x0020_Time&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Session_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Session_x0020_Location&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;_x0034_8hr_x0020_Window&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Clinician_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Location&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Notes_x0020_for_x0020_Clinician&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Hold_x0020_24h&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_Appointment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_Days&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_End_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_Frequency&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Schedule_x0020_At&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Created_x0020_At&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Call_x0020_Summary&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Transcript&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Call_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Freshdesk_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Freshdesk_x0020_Ticket_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Row_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Payment_x0020_Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_Time_x0020_bracket&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;First_x0020_Message_x0020_Timestamp&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;SMS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                                                <ui:BuildDataTable sap2010:Annotation.AnnotationText="Duplicate Rows for recurring appointments" DataTable="[dt_Duplicate_Row]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="515.2,127.2" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_Time&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Reschedule_x0020_Appointment_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Reschedule_x0020_Appointment_x0020_Time&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Session_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Session_x0020_Location&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Client_x0020_Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;_x0034_8hr_x0020_Window&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Clinician_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Location&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Notes_x0020_for_x0020_Clinician&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Hold_x0020_24h&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_Appointment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_Days&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_End_x0020_Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Recurring_x0020_Frequency&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Schedule_x0020_At&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Created_x0020_At&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Call_x0020_Summary&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Transcript&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Call_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Freshdesk_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Freshdesk_x0020_Ticket_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Row_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Payment_x0020_Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_Time_x0020_bracket&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;First_x0020_Message_x0020_Timestamp&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;SMS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Appointment_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </ui:BuildDataTable>
-                                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data 'UL'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Recurring_Date_R'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,146.4" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
-                                                  <uix:NExtractData.Target>
-                                                    <uix:TargetAnchorable BrowserURL="https://shiftgritab.janeapp.com/admin#schedule/staff/8/2025-12-28/2026-01-03" DesignTimeRectangle="514, 346, 1371, 614" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='pane-right-extended' tag='UL' /&gt;" Guid="55ff45bb-1ccd-4a9c-8d3b-eb20c76cb467" InformativeScreenshot="3cd0ea8a0250d0e76c4b07aa8ff3e82f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                                                  </uix:NExtractData.Target>
+                                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="515.2,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                                                  <ui:CommentOut.Body>
+                                                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,193.6" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data 'UL'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Recurring_Date_R'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,133.6" sap2010:WorkflowViewState.IdRef="NExtractData_3" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                                                        <uix:NExtractData.Target>
+                                                          <uix:TargetAnchorable BrowserURL="https://shiftgritab.janeapp.com/admin#schedule/staff/8/2025-12-28/2026-01-03" DesignTimeRectangle="514, 346, 1371, 614" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='pane-right-extended' tag='UL' /&gt;" Guid="55ff45bb-1ccd-4a9c-8d3b-eb20c76cb467" InformativeScreenshot="3cd0ea8a0250d0e76c4b07aa8ff3e82f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                                        </uix:NExtractData.Target>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                      </uix:NExtractData>
+                                                    </Sequence>
+                                                  </ui:CommentOut.Body>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </ui:CommentOut>
+                                                <uix:NExtractDataGeneric x:TypeArguments="sd3:DataTable5" ContinueOnError="True" DisplayName="Extract Table Data 'UL'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Status'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Recurring_Date_R'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractedData="[ExtractDataTable]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="515.2,146.4" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                                                  <uix:NExtractDataGeneric.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://shiftgritab.janeapp.com/admin#schedule/staff/8/2026-05-03/2026-05-09" DesignTimeRectangle="514, 344, 1371, 636" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='pane-right-extended' tag='UL' /&gt;" Guid="4b0a0d60-e354-4ddf-b634-5479fe25ec8a" InformativeScreenshot="8d78cd59b02deb81a3659029b266eeae.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                                  </uix:NExtractDataGeneric.Target>
+                                                </uix:NExtractDataGeneric>
+                                                <ui:FilterDataTable DataTable="[ExtractDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="515.2,198.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[DT_Filter_ExtractDataTable]" SelectColumnsMode="Remove">
+                                                  <ui:FilterDataTable.Filters>
+                                                    <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                                                      <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                                                        <ui:FilterOperationArgument.Column>
+                                                          <InArgument x:TypeArguments="x:String">["Status"]</InArgument>
+                                                        </ui:FilterOperationArgument.Column>
+                                                        <ui:FilterOperationArgument.Operand>
+                                                          <InArgument x:TypeArguments="x:String">["Booked"]</InArgument>
+                                                        </ui:FilterOperationArgument.Operand>
+                                                      </ui:FilterOperationArgument>
+                                                      <ui:FilterOperationArgument BooleanOperator="Or" Operator="CONTAINS">
+                                                        <ui:FilterOperationArgument.Column>
+                                                          <InArgument x:TypeArguments="x:String">["Status"]</InArgument>
+                                                        </ui:FilterOperationArgument.Column>
+                                                        <ui:FilterOperationArgument.Operand>
+                                                          <InArgument x:TypeArguments="x:String">["Available"]</InArgument>
+                                                        </ui:FilterOperationArgument.Operand>
+                                                      </ui:FilterOperationArgument>
+                                                    </scg:List>
+                                                  </ui:FilterDataTable.Filters>
+                                                  <ui:FilterDataTable.SelectColumns>
+                                                    <scg:List x:TypeArguments="InArgument" Capacity="4">
+                                                      <x:Null />
+                                                    </scg:List>
+                                                  </ui:FilterDataTable.SelectColumns>
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                </uix:NExtractData>
-                                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="All recurring appointments" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-                                                  <ui:ForEachRow.Body>
-                                                    <ActivityAction x:TypeArguments="sd:DataRow">
-                                                      <ActivityAction.Argument>
-                                                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                                                      </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,524" sap2010:WorkflowViewState.IdRef="Sequence_23">
-                                                        <Sequence.Variables>
-                                                          <Variable x:TypeArguments="x:String" Name="Fecthed_Recurring_Date" />
-                                                        </Sequence.Variables>
-                                                        <sap:WorkflowViewStateService.ViewState>
-                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                          </scg:Dictionary>
-                                                        </sap:WorkflowViewStateService.ViewState>
-                                                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,184" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
-                                                          <ui:MultipleAssign.AssignOperations>
-                                                            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-                                                                <ui:AssignOperation.To>
-                                                                  <OutArgument x:TypeArguments="x:String">[Fecthed_Recurring_Date]</OutArgument>
-                                                                </ui:AssignOperation.To>
-                                                                <ui:AssignOperation.Value>
-                                                                  <InArgument x:TypeArguments="x:String">[CurrentRow(0).ToString]</InArgument>
-                                                                </ui:AssignOperation.Value>
-                                                              </ui:AssignOperation>
-                                                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
-                                                                <ui:AssignOperation.To>
-                                                                  <OutArgument x:TypeArguments="x:String">[Fecthed_Recurring_Date]</OutArgument>
-                                                                </ui:AssignOperation.To>
-                                                                <ui:AssignOperation.Value>
-                                                                  <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(Fecthed_Recurring_Date, "dddd MMMM d, yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd")]</InArgument>
-                                                                </ui:AssignOperation.Value>
-                                                              </ui:AssignOperation>
-                                                            </scg:List>
-                                                          </ui:MultipleAssign.AssignOperations>
-                                                        </ui:MultipleAssign>
-                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,60.8" sap2010:WorkflowViewState.IdRef="LogMessage_15" Message="[Fecthed_Recurring_Date]">
-                                                          <sap:WorkflowViewStateService.ViewState>
-                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                            </scg:Dictionary>
-                                                          </sap:WorkflowViewStateService.ViewState>
-                                                        </ui:LogMessage>
-                                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Fecthed_Recurring_Date, c_1, c_2, c_3, c_4, c_5, c_6, c_7, c_8, c_9, c_10, c_11, c_12, c_13, c_14, c_15, c_16, c_17, c_18, c_19, c_20, c_21, c_22, c_23, c_24,c_25,c_26,c_27,c_28,c_29,c_30}]" DataTable="[dt_Duplicate_Row]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="478.4,215.2" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
-                                                          <sap:WorkflowViewStateService.ViewState>
-                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                            </scg:Dictionary>
-                                                          </sap:WorkflowViewStateService.ViewState>
-                                                        </ui:AddDataRow>
-                                                      </Sequence>
-                                                    </ActivityAction>
-                                                  </ui:ForEachRow.Body>
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                </ui:ForEachRow>
-                                                <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Read and write the data in sheet " Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
+                                                </ui:FilterDataTable>
+                                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="515.2,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_43" Message="[&quot;Total records to be fetched: &quot;+DT_Filter_ExtractDataTable.RowCount.ToString]" />
+                                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="515.2,964" sap2010:WorkflowViewState.IdRef="TryCatch_14">
+                                                  <TryCatch.Finally>
+                                                    <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="513.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </Sequence>
+                                                  </TryCatch.Finally>
+                                                  <TryCatch.Try>
+                                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="All recurring appointments" DataTable="[DT_Filter_ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="513.6,704.8" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
+                                                      <ui:ForEachRow.Body>
+                                                        <ActivityAction x:TypeArguments="sd:DataRow">
+                                                          <ActivityAction.Argument>
+                                                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                                          </ActivityAction.Argument>
+                                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,524" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                                                            <Sequence.Variables>
+                                                              <Variable x:TypeArguments="x:String" Name="Fecthed_Recurring_Date" />
+                                                            </Sequence.Variables>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,184" sap2010:WorkflowViewState.IdRef="MultipleAssign_4">
+                                                              <ui:MultipleAssign.AssignOperations>
+                                                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                                                                    <ui:AssignOperation.To>
+                                                                      <OutArgument x:TypeArguments="x:String">[Fecthed_Recurring_Date]</OutArgument>
+                                                                    </ui:AssignOperation.To>
+                                                                    <ui:AssignOperation.Value>
+                                                                      <InArgument x:TypeArguments="x:String">[CurrentRow(1).ToString]</InArgument>
+                                                                    </ui:AssignOperation.Value>
+                                                                  </ui:AssignOperation>
+                                                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                                                                    <ui:AssignOperation.To>
+                                                                      <OutArgument x:TypeArguments="x:String">[Fecthed_Recurring_Date]</OutArgument>
+                                                                    </ui:AssignOperation.To>
+                                                                    <ui:AssignOperation.Value>
+                                                                      <InArgument x:TypeArguments="x:String">[DateTime.ParseExact(Fecthed_Recurring_Date, "dddd MMMM d, yyyy", System.Globalization.CultureInfo.InvariantCulture).ToString("yyyy-MM-dd")]</InArgument>
+                                                                    </ui:AssignOperation.Value>
+                                                                  </ui:AssignOperation>
+                                                                </scg:List>
+                                                              </ui:MultipleAssign.AssignOperations>
+                                                            </ui:MultipleAssign>
+                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="478.4,60.8" sap2010:WorkflowViewState.IdRef="LogMessage_40" Message="[Fecthed_Recurring_Date]">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </ui:LogMessage>
+                                                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Fecthed_Recurring_Date, c_1, c_2, c_3, c_4, c_5, c_6, c_7, c_8, c_9, c_10, c_11, c_12, c_13, c_14, c_15, c_16, c_17, c_18, c_19, c_20, c_21, c_22, c_23, c_24,c_25,c_26,c_27,c_28,c_29,c_30}]" DataTable="[dt_Duplicate_Row]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="478.4,215.2" sap2010:WorkflowViewState.IdRef="AddDataRow_3">
+                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                </scg:Dictionary>
+                                                              </sap:WorkflowViewStateService.ViewState>
+                                                            </ui:AddDataRow>
+                                                          </Sequence>
+                                                        </ActivityAction>
+                                                      </ui:ForEachRow.Body>
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </ui:ForEachRow>
+                                                  </TryCatch.Try>
+                                                </TryCatch>
+                                                <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Read and write the data in sheet " Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="515.2,92" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_5" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
                                                   <ugas:GoogleSheetsApplicationScope.Body>
                                                     <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
                                                       <ActivityAction.Argument>
                                                         <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
                                                       </ActivityAction.Argument>
-                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1165.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,1146.4" sap2010:WorkflowViewState.IdRef="Sequence_74">
                                                         <Sequence.Variables>
                                                           <Variable x:TypeArguments="sd:DataTable" Name="dt_test_sheet" />
                                                           <Variable x:TypeArguments="x:Int32" Name="lastRow" />
@@ -787,7 +1109,7 @@
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
-                                                        <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Reading: Client Appointment Sheet" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,280.8" sap2010:WorkflowViewState.IdRef="ReadRange_1" IncludeHeaders="False" Result="[dt_test_sheet]" SheetName="Client Appointments">
+                                                        <uga:ReadRange ContinueOnError="{x:Null}" Range="{x:Null}" SpreadsheetId="{x:Null}" sap2010:Annotation.AnnotationText="Reading: Client Appointment Sheet" AuthScopesInvalid="False" DisplayName="Read Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,279.2" sap2010:WorkflowViewState.IdRef="ReadRange_5" IncludeHeaders="False" Result="[dt_test_sheet]" SheetName="Client Appointments">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -796,7 +1118,7 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </uga:ReadRange>
-                                                        <Assign sap2010:Annotation.AnnotationText="last row of  a sheet so we can add data back to the sheeet" sap:VirtualizedContainerService.HintSize="416,223.2" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                        <Assign sap2010:Annotation.AnnotationText="last row of  a sheet so we can add data back to the sheeet" sap:VirtualizedContainerService.HintSize="416,219.2" sap2010:WorkflowViewState.IdRef="Assign_11">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="x:Int32">[lastRow]</OutArgument>
                                                           </Assign.To>
@@ -811,8 +1133,8 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </Assign>
-                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_29" Message="[&quot;DT_ROWS: &quot; + dt_test_sheet.Rows.Count.ToString() + &quot; last row no:&quot; + lastRow.ToString()]" />
-                                                        <Assign sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_41" Message="[&quot;DT_ROWS: &quot; + dt_test_sheet.Rows.Count.ToString() + &quot; last row no:&quot; + lastRow.ToString()]" />
+                                                        <Assign sap:VirtualizedContainerService.HintSize="416,174.4" sap2010:WorkflowViewState.IdRef="Assign_12">
                                                           <Assign.To>
                                                             <OutArgument x:TypeArguments="sd:DataTable">[dt_Duplicate_Row]</OutArgument>
                                                           </Assign.To>
@@ -820,7 +1142,7 @@
                                                             <InArgument x:TypeArguments="sd:DataTable">[dt_Duplicate_Row.AsEnumerable().Skip(1).CopyToDataTable()]</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <uga:WriteRange ContinueOnError="{x:Null}" Request="{x:Null}" Result="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DataTable="[dt_Duplicate_Row]" DisplayName="Write Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,240.8" sap2010:WorkflowViewState.IdRef="WriteRange_1" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="Client Appointments" StartingCell="[&quot;A&quot;+lastRow.ToString]">
+                                                        <uga:WriteRange ContinueOnError="{x:Null}" Request="{x:Null}" Result="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DataTable="[dt_Duplicate_Row]" DisplayName="Write Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="416,239.2" sap2010:WorkflowViewState.IdRef="WriteRange_3" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="Client Appointments" StartingCell="[&quot;A&quot;+lastRow.ToString]">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -849,7 +1171,7 @@
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </ugas:GoogleSheetsApplicationScope>
-                                                <ui:ClearDataTable sap2010:Annotation.AnnotationText="Clear dt_Duplicate_Row" DataTable="[dt_Duplicate_Row]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="416,139.2" sap2010:WorkflowViewState.IdRef="ClearDataTable_1">
+                                                <ui:ClearDataTable sap2010:Annotation.AnnotationText="Clear dt_Duplicate_Row" DataTable="[dt_Duplicate_Row]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="515.2,139.2" sap2010:WorkflowViewState.IdRef="ClearDataTable_3">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -861,24 +1183,24 @@
                                               </Sequence>
                                             </TryCatch.Try>
                                             <TryCatch.Catches>
-                                              <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                                              <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_12">
                                                 <ActivityAction x:TypeArguments="s:Exception">
                                                   <ActivityAction.Argument>
                                                     <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                                   </ActivityAction.Argument>
-                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,233.6" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="547.2,233.6" sap2010:WorkflowViewState.IdRef="Sequence_76">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[&quot;Fetched Recurring Appointment/ Storing in Sheet Failed&quot; + Environment.NewLine+ &quot;Failed: Reason: &quot;+Exception.Message]" />
+                                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="513.6,169.6" sap2010:WorkflowViewState.IdRef="LogMessage_42" Message="[&quot;Fetched Recurring Appointment/ Storing in Sheet Failed&quot; + Environment.NewLine+ &quot;Failed: Reason: &quot;+Exception.Message]" />
                                                   </Sequence>
                                                 </ActivityAction>
                                               </Catch>
                                             </TryCatch.Catches>
                                             <TryCatch.Finally>
-                                              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="547.2,94.4" sap2010:WorkflowViewState.IdRef="Sequence_77">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -887,7 +1209,7 @@
                                               </Sequence>
                                             </TryCatch.Finally>
                                           </TryCatch>
-                                          <TryCatch sap2010:Annotation.AnnotationText="Click Book Button" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+                                          <TryCatch sap2010:Annotation.AnnotationText="Click Book Button" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="548.8,92" sap2010:WorkflowViewState.IdRef="TryCatch_9">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -947,7 +1269,7 @@
                                               </Sequence>
                                             </TryCatch.Finally>
                                           </TryCatch>
-                                          <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Done" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_5" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Done&quot;]">
+                                          <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Done" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="548.8,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_5" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Done&quot;]">
                                             <uga:WriteCellConnections.FileIdBackup>
                                               <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="UrlOrId">
                                                 <usau:BackupSlot.BackupValues>
@@ -969,7 +1291,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </uga:WriteCellConnections>
-                                          <ui:LogMessage sap2010:Annotation.AnnotationText="Successfully Recurring an Appointment:" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Appointment has been Recurring Successfully for the client: &quot;+email+&quot; | Recurring  Date &amp; Frequency &quot;+ recurringDate+&quot; | &quot;+recurring_freq + Environment.NewLine+ &quot;| Row index: &quot;+index.ToString]">
+                                          <ui:LogMessage sap2010:Annotation.AnnotationText="Successfully Recurring an Appointment:" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="548.8,92" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;Appointment has been Recurring Successfully for the client: &quot;+email+&quot; | Recurring  Date &amp; Frequency &quot;+ recurringDate+&quot; | &quot;+recurring_freq + Environment.NewLine+ &quot;| Row index: &quot;+index.ToString]">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -978,7 +1300,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </ui:LogMessage>
-                                          <Sequence sap2010:Annotation.AnnotationText="Updating status in jane appointment sheet as well" DisplayName="Jane_Appointment" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                                          <Sequence sap2010:Annotation.AnnotationText="Updating status in jane appointment sheet as well" DisplayName="Jane_Appointment" sap:VirtualizedContainerService.HintSize="548.8,83.2" sap2010:WorkflowViewState.IdRef="Sequence_69">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1108,7 +1430,7 @@
                                         </Sequence>
                                       </uix:NCheckState.IfExists>
                                       <uix:NCheckState.IfNotExists>
-                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="483.2,798.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="582.4,509.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="sd:DataTable" Name="DT_Booking" />
                                             <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable_02" />
@@ -1121,21 +1443,21 @@
                                           </sap:WorkflowViewStateService.ViewState>
                                           <ui:CommentOut sap2010:Annotation.AnnotationText="important" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="CommentOut_6">
                                             <ui:CommentOut.Body>
-                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="555.2,1668" sap2010:WorkflowViewState.IdRef="Sequence_59">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="521.6,3264" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                                <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="521.6,1871.2" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                   <TryCatch.Try>
-                                                    <Sequence sap2010:Annotation.AnnotationText="If Staff not available&#xA;1-Booked the all appointment&#xA;2-Fetched and store all the appt" DisplayName="Try" sap:VirtualizedContainerService.HintSize="520,2409.6" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                                    <Sequence sap2010:Annotation.AnnotationText="If Staff not available&#xA;1-Booked the all appointment&#xA;2-Fetched and store all the appt" DisplayName="Try" sap:VirtualizedContainerService.HintSize="520,993.6" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1324,7 +1646,7 @@
                                                           </scg:Dictionary>
                                                         </sap:WorkflowViewStateService.ViewState>
                                                       </ui:CommentOut>
-                                                      <uix:NCheckState DisplayName="Check App State 'Book 4 appointmentsDone'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,1800.8" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
+                                                      <uix:NCheckState DisplayName="Check App State 'Book 4 appointmentsDone'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486.4,384.8" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="67a90d5c-8539-4615-88a6-61bf7280cbee" Version="V5">
                                                         <uix:NCheckState.IfExists>
                                                           <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="484.8,1135.2" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                                             <sap:WorkflowViewStateService.ViewState>
@@ -1737,7 +2059,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </ui:CommentOut>
-                                          <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Done" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,380.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_14" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Done&quot;]">
+                                          <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Done" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="449.6,92" sap2010:WorkflowViewState.IdRef="WriteCellConnections_14" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Done&quot;]">
                                             <uga:WriteCellConnections.FileIdBackup>
                                               <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID4" StoredValue="UrlOrId">
                                                 <usau:BackupSlot.BackupValues>
@@ -1753,7 +2075,7 @@
                                             </uga:WriteCellConnections.Item>
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                               </scg:Dictionary>
@@ -1768,7 +2090,7 @@
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Reading...&#xA;Client Details Sheet &amp;&#xA;Appointment Details Sheet" ConnectionAccountName="Mehban_Org" ConnectionId="FolderItemId" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="518.4,1459.2" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_4" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
+                                            <ugas:GoogleSheetsApplicationScope ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="shiftgritautomation@gmail.com" Action="UseExisting" sap2010:Annotation.AnnotationText="Reading...&#xA;Client Details Sheet &amp;&#xA;Appointment Details Sheet" ConnectionAccountName="Mehban_Org" ConnectionId="FolderItemId" Connector="uipath-google-sheets" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="518.4,1499.2" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_4" Mode="EnterId" SpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" UseConnectionService="False" UserEmail="shiftgritautomation@gmail.com">
                                               <ugas:GoogleSheetsApplicationScope.Body>
                                                 <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
                                                   <ActivityAction.Argument>
@@ -1903,7 +2225,7 @@
                                   </Sequence>
                                 </uix:NCheckState.IfExists>
                                 <uix:NCheckState.IfNotExists>
-                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="518.4,645.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="619.2,645.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1918,7 +2240,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:LogMessage>
-                                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Failed" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,372" sap2010:WorkflowViewState.IdRef="WriteCellConnections_13" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Failed&quot;]">
+                                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Failed" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,372" sap2010:WorkflowViewState.IdRef="WriteCellConnections_13" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Failed&quot;]">
                                       <uga:WriteCellConnections.FileIdBackup>
                                         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID5" StoredValue="UrlOrId">
                                           <usau:BackupSlot.BackupValues>
@@ -1956,7 +2278,7 @@
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="553.6,645.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="654.4,645.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1971,7 +2293,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:LogMessage>
-                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Failed" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,372" sap2010:WorkflowViewState.IdRef="WriteCellConnections_12" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Failed&quot;]">
+                              <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Failed" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,372" sap2010:WorkflowViewState.IdRef="WriteCellConnections_12" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Failed&quot;]">
                                 <uga:WriteCellConnections.FileIdBackup>
                                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID6" StoredValue="UrlOrId">
                                     <usau:BackupSlot.BackupValues>
@@ -2014,13 +2336,13 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590.4,645.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="689.6,645.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Failed" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="556.8,380.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_2" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Failed&quot;]">
+                            <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Failed" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="654.4,380.8" sap2010:WorkflowViewState.IdRef="WriteCellConnections_2" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Failed&quot;]">
                               <uga:WriteCellConnections.FileIdBackup>
                                 <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID7" StoredValue="UrlOrId">
                                   <usau:BackupSlot.BackupValues>
@@ -2042,7 +2364,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uga:WriteCellConnections>
-                            <ui:LogMessage sap2010:Annotation.AnnotationText="Recurring Failed:" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556.8,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Recurring Failed for the client: &quot;+email+&quot; | Recurring  Date: &quot;+ recurringDate+ &quot; | Recurring Frequency: &quot;+recurring_freq + Environment.NewLine+ &quot;| Row index: &quot;+index.ToString +Environment.NewLine+ &quot; Failed Reason: &quot;+Exception.Message]">
+                            <ui:LogMessage sap2010:Annotation.AnnotationText="Recurring Failed:" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="654.4,200.8" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Recurring Failed for the client: &quot;+email+&quot; | Recurring  Date: &quot;+ recurringDate+ &quot; | Recurring Frequency: &quot;+recurring_freq + Environment.NewLine+ &quot;| Row index: &quot;+index.ToString +Environment.NewLine+ &quot; Failed Reason: &quot;+Exception.Message]">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2056,7 +2378,7 @@
                       </Catch>
                     </TryCatch.Catches>
                     <TryCatch.Finally>
-                      <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="590.4,94.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="588.8,94.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2067,7 +2389,7 @@
                   </TryCatch>
                 </uix:NCheckState.IfExists>
                 <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="592,614.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,614.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2082,7 +2404,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:LogMessage>
-                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Failed" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="42ed8e1c-27d4-49c7-8b13-c98838fe9d99" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,372" sap2010:WorkflowViewState.IdRef="WriteCellConnections_11" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Failed&quot;]">
+                    <uga:WriteCellConnections BrowserItemFriendlyName="{x:Null}" BrowserItemId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Spreadsheet="{x:Null}" sap2010:Annotation.AnnotationText="Recurring Appointment = Recurring Failed" AuthScopesInvalid="False" Cell="[&quot;N&quot;+index.ToString]" ConnectionId="29f84a02-7bea-4ddf-80ab-90e40c62a51c" DisplayName="Update Recurring Appointment Column" HideCell="False" sap:VirtualizedContainerService.HintSize="416,372" sap2010:WorkflowViewState.IdRef="WriteCellConnections_11" ItemSelectionMode="UrlOrId" ManualEntrySpreadsheetId="1z3-NtX5Zh850L4FvSwBf2XylUDCAre3qHv1sR8_u0RY" RangeLocation="'Client Appointments'" UseConnectionService="True" WhatToWrite="[&quot;Recurring Failed&quot;]">
                       <uga:WriteCellConnections.FileIdBackup>
                         <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID8" StoredValue="UrlOrId">
                           <usau:BackupSlot.BackupValues>
@@ -2107,7 +2429,7 @@
                   </Sequence>
                 </uix:NCheckState.IfNotExists>
                 <uix:NCheckState.Target>
-                  <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="1542, 288, 387, 751" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='pane-right' tag='DIV' class='pane-content pane-right-content pane-scroll' /&gt;" Guid="5c928ae1-a93d-4be9-81e1-03020442d7e4" InformativeScreenshot="032fd62cfb7c4f158e2205f3bd5612fb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='* - Staff - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="1542, 245, 387, 794" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='pane-right' tag='DIV' class='pane-content pane-right-content pane-scroll' /&gt;" Guid="5c928ae1-a93d-4be9-81e1-03020442d7e4" InformativeScreenshot="889e9eecdf5b04b0759150315ba12ac6.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='* - Staff - ShiftGrit - Jane' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
