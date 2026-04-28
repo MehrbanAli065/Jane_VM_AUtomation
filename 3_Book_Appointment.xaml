@@ -165,7 +165,7 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_3_Book_Appointment" sap:VirtualizedContainerService.HintSize="917.2,9205.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_3_Book_Appointment" sap:VirtualizedContainerService.HintSize="906.8000000000001,8718.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="1" Name="INDEX" />
       <Variable x:TypeArguments="x:Int32" Default="1" Name="idx" />
@@ -175,21 +175,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Book Appointment" sap:VirtualizedContainerService.HintSize="652.8,9183.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Book Appointment" sap:VirtualizedContainerService.HintSize="652.8,8695.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Schedule - ShiftGrit - Jane" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="619.2,9100" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Schedule - ShiftGrit - Jane" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="619.2,8612" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="593.6,8836" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="593.6,8348" sap2010:WorkflowViewState.IdRef="TryCatch_6">
               <TryCatch.Try>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,7981.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,7493.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="staff_url" />
                     <Variable x:TypeArguments="x:String" Name="Staff_ID" />
@@ -237,9 +237,9 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Delay>
-                  <uix:NCheckState DisplayName="Check App State 'Testy McTester'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="558.4,7485.6" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Version="V5">
+                  <uix:NCheckState DisplayName="Check App State 'Testy McTester'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="558.4,6997.6" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Version="V5">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="556.8,6648.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="556.8,6160.8" sap2010:WorkflowViewState.IdRef="Sequence_27">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -331,10 +331,10 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
                         </Sequence>
-                        <uix:NGoToUrl sap2010:Annotation.AnnotationText="Go to appointment bookin date..." DelayAfter="0" DelayBefore="0" DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="523.2,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Url="[&quot;https://shiftgritab.janeapp.com/admin#schedule/staff/&quot;+Staff_ID+&quot;/&quot;+appointment_date]" Version="V5">
+                        <uix:NGoToUrl sap2010:Annotation.AnnotationText="Go to appointment bookin date..." DelayAfter="0" DelayBefore="0" DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="523.2,157.6" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Url="[&quot;https://shiftgritab.janeapp.com/admin#schedule/staff/&quot;+Staff_ID+&quot;/&quot;+appointment_date]" Version="V5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                             </scg:Dictionary>
@@ -525,7 +525,7 @@ ShiftGrit Automations</x:String>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </Delay>
-                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="523.2,663.2" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                        <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="523.2,1262.4" sap2010:WorkflowViewState.IdRef="TryCatch_12">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -533,13 +533,13 @@ ShiftGrit Automations</x:String>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <TryCatch.Try>
-                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="" ClickType="Single" DisplayName="CV_Cick" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,56" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Timeout="10" Version="V5">
+                            <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="" ClickType="Single" DisplayName="CV_Cick" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="449.6,192.8" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Timeout="10" Version="V5">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="393, 695, 515, 31" ElementVisibilityArgument="Interactive" Guid="002f1aed-5bfc-4b3f-b1b4-2997e867ffb4" ImageAccuracyArgument="1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAgMAAAAfCAYAAAB6UM6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADESURBVHhe7dzBCcMwFAVB939TO3ELqkUt2GByDs5VOx+mBi3voON6eXPOa60FAGxGDABAnBgAgDgxAABxYgAA4sQAAMSJAQCIEwMAEPdXDJznBwDYjGUAAOLEAADEiQEAiBMDABAnBgAg7hhjfJ/73ycGAGBPzzLwJgjEAADsSQwAQJwYAIA4MQAAcWIAAOLEAADEiQEAiPPPAADEPcvAmxMDALAnMQAAcWIAAOLEAADEiQEAiBMDABAnBgAgTgwAQNq6bttEEmn33xonAAAAAElFTkSuQmCC" ImageOccurrenceArgument="1" InformativeScreenshot="d1b52cbc7d176b557c1dde42ea72ef68.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" WaitForReadyArgument="Interactive" />
                               </uix:NClick.Target>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 </scg:Dictionary>
@@ -552,21 +552,39 @@ ShiftGrit Automations</x:String>
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,313.6" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,771.2" sap2010:WorkflowViewState.IdRef="Sequence_74">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="LogMessage_40" Message="[&quot;First CV Click Failed&quot;]">
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,178.4" sap2010:WorkflowViewState.IdRef="LogMessage_40" Message="[&quot;First CV Click Failed&quot;]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
+                                  <uix:NGoToUrl sap2010:Annotation.AnnotationText="Go to appointment bookin date..." DelayAfter="0" DelayBefore="0" DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="416,153.6" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Url="[&quot;https://shiftgritab.janeapp.com/admin#schedule/staff/&quot;+Staff_ID+&quot;/&quot;+appointment_date]" Version="V5">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NGoToUrl>
+                                  <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,60.8" sap2010:WorkflowViewState.IdRef="Delay_11">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                  </ui:LogMessage>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'chrome.exe Schedule - S…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,188.8" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Version="V5">
+                                  </Delay>
+                                  <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="416,125.6" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Version="V5" />
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'chrome.exe Schedule - S…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,188.8" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Timeout="10" Version="V5">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="393, 643, 515, 31" ElementVisibilityArgument="Interactive" Guid="002f1aed-5bfc-4b3f-b1b4-2997e867ffb4" ImageAccuracyArgument="1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAgMAAAAfCAYAAAB6UM6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADESURBVHhe7dzBCcMwFAVB939TO3ELqkUt2GByDs5VOx+mBi3voON6eXPOa60FAGxGDABAnBgAgDgxAABxYgAA4sQAAMSJAQCIEwMAEPdXDJznBwDYjGUAAOLEAADEiQEAiBMDABAnBgAg7hhjfJ/73ycGAGBPzzLwJgjEAADsSQwAQJwYAIA4MQAAcWIAAOLEAADEiQEAiPPPAADEPcvAmxMDALAnMQAAcWIAAOLEAADEiQEAiBMDABAnBgAgTgwAQNq6bttEEmn33xonAAAAAElFTkSuQmCC" ImageOccurrenceArgument="1" InformativeScreenshot="d8d796a82ad6af7e55e99a14557dcdb6.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" WaitForReadyArgument="Interactive" />
                                     </uix:NClick.Target>
@@ -582,7 +600,7 @@ ShiftGrit Automations</x:String>
                             </Catch>
                           </TryCatch.Catches>
                           <TryCatch.Finally>
-                            <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,89.6" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                            <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="449.6,94.4" sap2010:WorkflowViewState.IdRef="Sequence_76">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -603,7 +621,7 @@ ShiftGrit Automations</x:String>
                             </ui:LogMessage>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,523.2" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,859.2" sap2010:WorkflowViewState.IdRef="Sequence_51">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -625,7 +643,25 @@ ShiftGrit Automations</x:String>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </uix:NMouseScroll>
-                              <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="" ClickType="Single" DisplayName="CV_Cick" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="NClick_29" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Version="V5">
+                              <uix:NGoToUrl sap2010:Annotation.AnnotationText="Go to appointment bookin date..." DelayAfter="0" DelayBefore="0" DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="416,157.6" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Url="[&quot;https://shiftgritab.janeapp.com/admin#schedule/staff/&quot;+Staff_ID+&quot;/&quot;+appointment_date]" Version="V5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGoToUrl>
+                              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,56.8" sap2010:WorkflowViewState.IdRef="Delay_12">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Delay>
+                              <uix:NNavigateBrowser Action="Refresh" DisplayName="Navigate Browser - Refresh" sap:VirtualizedContainerService.HintSize="416,121.6" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Version="V5" />
+                              <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="" ClickType="Single" DisplayName="CV_Cick" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="NClick_29" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f3594e51-accb-40b5-a29a-2d7e8554b6d5" Timeout="10" Version="V5">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="shiftgritab.janeapp.com/admin" DesignTimeRectangle="393, 695, 515, 31" ElementVisibilityArgument="Interactive" Guid="002f1aed-5bfc-4b3f-b1b4-2997e867ffb4" ImageAccuracyArgument="1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAgMAAAAfCAYAAAB6UM6eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADESURBVHhe7dzBCcMwFAVB939TO3ELqkUt2GByDs5VOx+mBi3voON6eXPOa60FAGxGDABAnBgAgDgxAABxYgAA4sQAAMSJAQCIEwMAEPdXDJznBwDYjGUAAOLEAADEiQEAiBMDABAnBgAg7hhjfJ/73ycGAGBPzzLwJgjEAADsSQwAQJwYAIA4MQAAcWIAAOLEAADEiQEAiPPPAADEPcvAmxMDALAnMQAAcWIAAOLEAADEiQEAiBMDABAnBgAgTgwAQNq6bttEEmn33xonAAAAAElFTkSuQmCC" ImageOccurrenceArgument="1" InformativeScreenshot="d1b52cbc7d176b557c1dde42ea72ef68.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='jane' title='Schedule - ShiftGrit - Jane' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" WaitForReadyArgument="Interactive" />
                                 </uix:NClick.Target>
@@ -650,7 +686,7 @@ ShiftGrit Automations</x:String>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NCheckState>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="523.2,1213.6" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="523.2,60.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                           <ui:CommentOut.Body>
                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484.8,1099.2" sap2010:WorkflowViewState.IdRef="Sequence_43">
                               <sap:WorkflowViewStateService.ViewState>
@@ -734,7 +770,7 @@ ShiftGrit Automations</x:String>
                           </ui:CommentOut.Body>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -1440,7 +1476,7 @@ ShiftGrit Automations</x:String>
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="486.4,496.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="556.8,496.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
